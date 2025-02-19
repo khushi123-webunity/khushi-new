@@ -5,13 +5,13 @@
   color: black;
 }
 
-.price > * {
+.price>* {
   display: inline-block;
   vertical-align: top;
 }
 
 .price.price--unavailable {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .price--end {
