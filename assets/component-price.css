@@ -11,7 +11,7 @@
 }
 
 .price.price--unavailable {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .price--end {
