@@ -1,0 +1,94 @@
+<section class="skincare-solution_sub">
+<div class="page-width">
+
+   <div class="skincare-blocks">
+      {% for block in section.blocks%}
+        <div class="skincare-block-inner">
+          <div class="skincare-concept">
+      <h3>{{ block.settings.con_head }}</h3>
+      <p>{{ block.settings.desc }}</p>
+      <p>{{ block.settings.liquid_desc}}</p>               
+         </div>
+          <div class ="skincare-inner-image1">
+             {% if block.settings.img_1 != blank %}
+             <img src="{{ block.settings.img_1 | img_url: "master" }}">
+              {% endif %}
+          </div>       
+        </div>
+        {% endfor %}
+    </div>   
+</div>     
+</section>
+
+                    
+
+<style>
+  .skincare-solution_sub{
+    padding-top:{{ section.settings.padding }}px;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "skincare-solution_sub",
+    "settings": [
+{
+      "type": "range",
+      "id": "padding",
+      "label": "Padding top",
+         "min": 90,
+          "max": 190,
+          "step": 1,
+          "unit": "px",
+          "default": 90
+    }
+      
+    ],
+     "blocks": [
+     {
+       "name": "title",
+       "type": "slide",
+       "settings": [
+       {
+          "type": "image_picker",
+          "id": "img_1",
+          "label": "Enter Image"
+        },
+         
+        
+         {
+          "type": "text",
+          "id": "con_head",
+          "label": "Heading"
+        },
+        
+         {
+          "type": "liquid",
+          "id": "liquid_desc",
+          "label": "Enter liquid code here"
+        },
+         {
+          "type": "richtext",
+          "id": "desc",
+          "label": "Enter description"
+        }
+       ]
+     }
+  ],
+    
+    "presets": [
+      {
+        "name": "skincare-solution_sub"
+      }
+    ]
+  
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,236 @@
+<section class="upseller-product">
+   <div class="page-width">
+      <div class="article-main">
+         {% for block in section.blocks %}
+         <div class="article--inner-desc">
+            {{ block.settings.aricle-inner }}
+         </div>
+         <div class="article-pro">
+            {% assign products = block.settings.product %} 
+            {% if products != blank %}
+            <div class="custom-bundle-parent">
+               <div class="metafield--article">
+                  {% if products.featured_image.src != blank %}  <img src="{{ products.featured_image.src | img_url: '800x800' }}" alt="{{ products.title }}">{% endif %}
+                  {% if products.title != blank %}   
+                  <h2>{{ products.title }}</h2>
+                  {% endif %}
+                  {% if products.price != blank %}    
+                  <p>Price: {{ products.price | money_with_currency }}</p>
+                  {% endif %}
+                  {% assign available = products.selected_or_first_available_variant.available %}
+                  {% assign product_id = products.selected_or_first_available_variant.id %}
+                  <div class="collection-cart" >
+                     <form method="post" action="/cart/add">
+                        <input type="hidden" name="id" value="{{ product_id }}" />
+                        {% if available != blank %}<input id="openModalBtn" type="submit" name="add" value="{% if available %}ADD TO CART{% else %}SOLD OUT{% endif %}" class="product-bundle-cart" {% if available %}{% else %}disabled{% endif %}/>{% endif %}
+                     </form>
+                  </div>
+               </div>
+            </div>
+            {% endif %}
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</section>
+
+<div class="popup-dialog">
+   <div id="myModal" class="modal">
+      <div class="modal-content">
+         <span id="closeModalBtn" class="close">&times;</span>
+         <div class="popup-card">
+            <img class="popup-cart-img" src="{{ 'party-popper-joypixels.gif' | asset_img_url : " 10*10" }}" />
+            <h2> Congratulations !!!</h2>
+            <p>Your product is now successfully added.</p>
+            <h4>You May Also Like</h4>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+<style>
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	animation-name: fadeIn;
+	animation-duration: 0.4s;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 23%;
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+	border-radius: 30px;
+}
+
+.metafield--article {
+	box-shadow: 0px 4px 15px 1px #0000000F;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #EFA697;
+	padding: 10px;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes slideIn {
+	from {
+		bottom: -300px;
+		opacity: 0
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+
+@keyframes fadeOut {
+	from {
+		opacity: 1
+	}
+
+	to {
+		opacity: 0
+	}
+}
+
+.modal.fadeOut {
+	animation-name: fadeOut;
+	animation-duration: 0.4s;
+}
+</style>
+
+
+<script>
+  $(document).ready(function() {
+     $(document).on('submit', '.collection-cart form', function(e) {
+         e.preventDefault();
+         var formobj = $(this).serialize();
+         var cartmsg = $(this);
+         $.ajax({
+             type: 'POST',
+             url: '/cart/add.js',
+             data: formobj,
+             dataType: 'json',
+             success: function(data) {
+                 $('cart-drawer').removeClass('is-empty');
+                 $('.drawer__inner-empty').hide();
+                 $('cart-drawer').load(location.href + " .cart-drawer");
+                 $('#cart-icon-bubble').load(location.href + " #cart-icon-bubble");
+                 $('.popup-dialog').show();
+
+             },
+
+             error: function() {
+                 console.log("error");
+             }
+         });
+     });
+ });
+
+ document.getElementById('openModalBtn').onclick = function() {
+     var modal = document.getElementById('myModal');
+     modal.classList.remove('fadeOut');
+     modal.style.display = "block";
+     $('body').css('overflow', 'hidden')
+ }
+
+ document.getElementById('closeModalBtn').onclick = function() {
+     var modal = document.getElementById('myModal');
+     modal.classList.add('fadeOut');
+     setTimeout(function() {
+         modal.style.display = "none";
+     }, 400);
+     $('body').css('overflow', 'auto') // 400ms - длительность анимации
+ }
+
+ window.onclick = function(event) {
+     var modal = document.getElementById('myModal');
+     if (event.target == modal) {
+         modal.classList.add('fadeOut');
+         setTimeout(function() {
+             modal.style.display = "none";
+         }, 400);
+         $('body').css('overflow', 'auto') // 400ms - длительность анимации
+     }
+ }
+</script>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Upseller products",
+    "settings": [],
+     "blocks": [
+     {
+       "name": "Upseller products",
+       "type": "slide",
+       "settings": [
+        {
+        "type": "text",
+        "id": "aricle-inner",
+        "label": "Enter Article description"
+      },
+            {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      }
+       ]
+     }
+  ],
+     "presets": [
+      {
+        "name": "Upseller products"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

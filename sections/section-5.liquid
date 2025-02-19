@@ -1,0 +1,66 @@
+<section class="section-5">
+  <div class="background">
+  <div class="page-width">
+
+    <div class="section-5-blocks">
+      {% for block in section.blocks%}
+        <div class="section-5-block-inner">
+          <div class ="section-5-inner-image aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+             {% if block.settings.img_1 != blank %}
+             <img src="{{ block.settings.img_1 | img_url: "master" }}">
+              {% endif %}
+          </div>    
+        </div>
+        {% endfor %}
+    </div>    
+
+    
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "section-5",
+    "settings": [
+      
+    ],
+    "blocks": [
+     {
+       "name": "Image With Block",
+       "type": "slide",
+       "settings": [
+       {
+          "type": "image_picker",
+          "id": "img_1",
+          "label": "Enter Image"
+        }
+       ]
+     }
+  ],
+    
+    "presets": [
+      {
+        "name": "section-5"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

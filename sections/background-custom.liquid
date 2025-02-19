@@ -1,0 +1,171 @@
+<section class="background-custom">
+  <div class="mainy">
+    <div class="background--main" style="background-image: url('{{ section.settings.bg-image | img_url:'master'}}')">
+      <div class="background-media-text__inner">
+      <div class="page-width">
+        <div class="abc">
+          <div class="xyz">
+        <div class="background-media-text__aligner background-media-text--left">
+          <h2 class="h3">{{ section.settings.heading }}</h2>
+          <div class="rte background-media-text__subtext">{{ section.settings.richtext }}</div>
+          <a href="{{ section.settings.btn-url }}" class="btn">
+                   {{ section.settings.btn-name }}
+          </a>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<style>
+ 
+.background--main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+}
+
+.mainy{
+    width: 100%;
+    overflow: hidden;
+    background: #111111;
+}
+.xyz {
+    text-align: left;
+    background: white;
+    padding: 40px;
+    width: 400px;
+}
+.abc {
+    margin: 80px 40px;
+}
+h2.h3 {
+    display: block;
+    font-family: Karla,HelveticaNeue,Helvetica Neue,sans-serif;
+    font-weight: 700;
+    letter-spacing: .025em;
+    line-height: 1.4;
+    font-size: 1.82353em;
+}
+.rte.background-media-text__subtext p {
+    font-family: Karla,HelveticaNeue,Helvetica Neue,sans-serif;
+    letter-spacing: -.025em;
+    line-height: 1.6;
+    font-size: 17px;
+    font-size: 1.11765em;
+    /* -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed; */
+}
+a.btn:hover{
+    font-family: Karla,HelveticaNeue,Helvetica Neue,sans-serif;
+    font-weight: 700;
+    letter-spacing: .025em;
+    line-height: 1.4;
+    display: inline-block;
+    padding: 9px 20px;
+    margin: 0;
+    width: auto;
+    min-width: 90px;
+    font-size: .94118em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: padding-right .3s,background .3s;
+    background: black url(//fancyhaus.com/cdn/shop/t/2/assets/button-arrow.png?v=6902643…) no-repeat 150% 35%;
+    background-size: 29px;
+    background-position: 91% 35%;
+    color: #fff;
+    padding-right: 55px;
+}
+a.btn{
+    font-family: Karla,HelveticaNeue,Helvetica Neue,sans-serif;
+    font-weight: 700;
+    letter-spacing: .025em;
+    line-height: 1.4;
+    display: inline-block;
+    padding: 9px 20px;
+    width: auto;
+    min-width: 90px;
+    font-size: .94118em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+     background: black url(//fancyhaus.com/cdn/shop/t/2/assets/button-arrow.png?v=6902643…) no-repeat 150% 35%;
+    background-size: 29px;
+    color: #fff;
+    transition: padding-right .3s,background .3s;
+    background-size: 29px;
+}
+/* .background--main {
+    position: absolute;
+   overflow:hidden;
+  width:100%;
+} */
+.background-media-text__inner {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  /* .background--main {
+    position: relative;
+} */
+}
+</style>
+
+
+{% schema %}
+  {
+    "name": "background-custom",
+    "settings": [
+      {
+  "type": "image_picker",
+  "id": "bg-image",
+  "label": "Custom Background Image"
+},
+      {
+  "type": "text",
+  "id": "heading",
+  "label": "Heading"
+},
+      {
+  "type": "richtext",
+  "id": "richtext",
+  "label": "Heading"
+},
+         {
+  "type": "text",
+  "id": "btn-name",
+  "label": "button name"
+},
+      {
+  "type": "url",
+  "id": "btn-url",
+  "label": "Button link"
+}
+
+
+    ],
+     "presets": [
+    {
+      "name": "background-custom",
+      "settings": {
+       
+      }
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

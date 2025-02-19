@@ -1,0 +1,91 @@
+<section class="section-7">
+  <div class="page-width">
+     <div class="heading">
+      <h3 class="sub_heading">{{ section.settings.sub_head }}</h3>
+      <h2 class="head">{{ section.settings.heading }}</h2>
+      <p class="description_inner">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="section-7-blocks">
+      {% for block in section.blocks%}
+        <div class="section-7-block-inner">
+          <div class ="section-7-inner-image">
+             {% if block.settings.img_1 != blank %}
+             <img src="{{ block.settings.img_1 | img_url: "master" }}">
+              {% endif %}
+          </div>    
+        </div>
+        {% endfor %}
+    </div>    
+  </div>
+</section>
+
+
+<style>
+  .section-7{
+    padding-top:{{ section.settings.padding }}px;
+  }
+</style>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "section-7",
+    "settings": [
+       {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding top",
+         "min": 90,
+          "max": 190,
+          "step": 1,
+          "unit": "px",
+          "default": 90
+    },
+{
+      "type": "text",
+      "id": "sub_head",
+      "label": "Sub heading"
+    },
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "heading"
+    },
+     {
+      "type": "text",
+      "id": "description",
+      "label": "pro-description"
+    }
+      
+    ],
+     "blocks": [
+     {
+       "name": "Image With Block",
+       "type": "slide",
+       "settings": [
+       {
+          "type": "image_picker",
+          "id": "img_1",
+          "label": "Enter Image"
+        }
+       ]
+     }
+  ],
+    "presets": [
+      {
+        "name": "section-7"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,83 @@
+{% comment %}
+  Renders cart notification
+
+  Accepts:
+  - color_scheme: {String} sets the color scheme of the notification (optional)
+  - desktop_menu_type: {String} passes the desktop menu type which allows us to use the right css class (optional)
+
+  Usage:
+  {% render 'cart-notification' %}
+{% endcomment %}
+
+<cart-notification>
+  <div class="cart-notification-wrapper{% if desktop_menu_type != 'drawer' %} page-width{% endif %}">
+    <div
+      id="cart-notification"
+      class="cart-notification focus-inset{% if color_scheme %} color-{{ color_scheme }} gradient{% endif %}"
+      aria-modal="true"
+      aria-label="{{ 'general.cart.item_added' | t }}"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="cart-notification__header">
+        <h2 class="cart-notification__heading caption-large text-body">
+          {%- render 'icon-checkmark' -%}
+          {{ 'general.cart.item_added' | t }}
+        </h2>
+        <button
+          type="button"
+          class="cart-notification__close modal__close-button link link--text focus-inset"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          <svg class="icon icon-close" aria-hidden="true" focusable="false">
+            <use href="#icon-close">
+          </svg>
+        </button>
+      </div>
+      <div id="cart-notification-product" class="cart-notification-product"></div>
+    <div class="cart-notification__links">
+        <a
+          href="{{ routes.cart_url }}"
+          id="cart-notification-button"
+          class="button button--secondary button--full-width"
+        >{{ 'general.cart.view_empty_cart' | t }}</a>
+        <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+          <button class="button button--primary button--full-width" name="checkout">
+            {{ 'sections.cart.checkout' | t }}
+          </button>
+        </form>
+        <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+      </div>
+              <div class="custom-bundle-parent">
+          {% for field in product.metafields.custom.product_bundle.value %}
+              <div class="metafield--image">
+           <a href="{{ field.url }}">
+                 <img src="{{ field | img_url : "master" }}">
+             <h3 class="bundle-product">
+               {{ field.title }}
+  
+             </h3>
+             <span class="bundle-price">
+                  {{ field.price | money }}
+             </span>
+            </a>
+            {% assign available = field.selected_or_first_available_variant.available %}
+            {% assign product_id = field.selected_or_first_available_variant.id %}
+              <div class="collection-cart" >
+                <form method="post" action="/cart/add">
+                  <input type="hidden" name="id" value="{{ product_id }}" />
+                  <input type="submit" name="add" value="{% if available %}ADD TO CART{% else %}SOLD OUT{% endif %}" class="product-bundle-cart" {% if available %}{% else %}disabled{% endif %}/>
+                </form>
+              </div>
+              </div>
+        {% endfor %}
+</div>
+    </div>
+  </div>
+</cart-notification>
+{% style %}
+  .cart-notification {
+    display: none;
+  }
+  
+{% endstyle %}

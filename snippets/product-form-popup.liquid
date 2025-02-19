@@ -1,0 +1,65 @@
+ {% render 'upseller-offer' %}
+{% render 'custom-drawer' %}
+  {% assign available = product.selected_or_first_available_variant.available %}
+  <div class="product-form">
+    {% for variant in product.variants %}
+    <input type="hidden" id="variantgetId" value="{{ variant.id }}">
+    {% endfor %}
+    <button type="button" name="add" class="popup-cart-button" id="collection-cart-{{ product.id }}">
+      {% if available == true %}
+      Add to cart
+      {% else %}
+      SOLD OUT
+      {% endif %}
+    </button>
+  </div>
+{% comment %}<dialog class="popup-dialog">
+  <div class="button-container">
+    <div id="close-popup">
+        <svg width="21" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <path
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </div>
+     <div class="popup-card">
+    <img class="popup-cart-img" src="{{ 'party-popper-joypixels.gif' | asset_img_url : " 10*10" }}" />
+        <h2> Congratulations !!!</h2>
+        <p>Your product is now successfully added.</p>
+        <h4>You May Also Like</h4>
+  </div>
+  </div>  
+  
+</dialog>{% endcomment %}
+
+<script>
+ $(document).on('click','#collection-cart-{{ product.id }}', function () {
+      let getvarientid = $(this).parents('.product-form').find('#variantgetId').val();
+     
+      let cartmsg = $(this);
+      let formobj = {
+        quantity: 1,
+        id: getvarientid,
+       
+      };
+
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        cache: false,
+        data: formobj,
+        dataType: 'json',
+        success: function (data) {
+          $('cart-drawer').removeClass('is-empty');
+          $('.drawer__inner-empty').hide();
+          $('cart-drawer').load(location.href + " .cart-drawer");
+          $('#cart-icon-bubble').load(location.href + " #cart-icon-bubble");
+         
+        },
+        error: function () {
+          alert("error");
+        }
+      });
+    });
+  
+</script>
+

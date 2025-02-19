@@ -1,0 +1,142 @@
+<section class="section-9">
+  <div class="page-width">
+    <div class="heading">
+      <h3 class="sub_heading">{{ section.settings.sub_head }}</h3>
+      <h2 class="head">{{ section.settings.heading }}</h2>
+      <p class="description_inner">{{ section.settings.description }}</p>
+    </div>
+
+
+    <div class="section-9-blocks">
+      {% for block in section.blocks%}
+        <div class="section-9-block-inner">
+          <div class ="section-9-inner-image">
+             {% if block.settings.img_1 != blank %}
+             <img src="{{ block.settings.img_1 | img_url: "master" }}">
+              {% endif %}
+          </div>
+    <div class="section-9-concept">
+      <h3>{{ block.settings.con_head }}</h3>  
+      <p>{{ block.settings.desc }}</p>
+    </div>
+          <div class="section-9-inner">
+            <div class="inner-content">
+              <h5>{{ block.settings.inner_content }}</h5>
+            </div>
+            <div class="date_content">
+              <div>
+              {% for block in section.blocks %}
+                {% if block.settings.img_2 != blank %}
+             <img src="{{ block.settings.img_2 | img_url: "master" }}">
+              {% endif %}       
+                {% endfor %}
+              </div>
+        <div>
+        <span class="span-date">{{ block.settings.left_inner }}</span>
+        </div>
+            </div>
+          </div>
+          
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+  .section-9{
+    padding-top:{{ section.settings.padding }}px;
+  }
+</style>
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "section-9",
+    "settings": [
+      {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding top",
+         "min": 90,
+          "max": 190,
+          "step": 1,
+          "unit": "px",
+          "default": 90
+    },
+      {
+      "type": "text",
+      "id": "sub_head",
+      "label": "Sub heading"
+    },
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "heading"
+    },
+     {
+      "type": "text",
+      "id": "description",
+      "label": "pro-description"
+    }  
+    ],
+    "blocks": [
+     {
+       "name": "Image With Block",
+       "type": "slide",
+       "settings": [
+       {
+          "type": "image_picker",
+          "id": "img_1",
+          "label": "Enter Image"
+        },
+         {
+          "type": "image_picker",
+          "id": "img_2",
+          "label": "Enter Image"
+        },
+         {
+          "type": "text",
+          "id": "con_head",
+          "label": "Heading"
+        },
+         {
+          "type": "text",
+          "id": "desc",
+          "label": "enter Description"
+        },
+         {
+          "type": "text",
+          "id": "inner_content",
+          "label": "enter name"
+        },
+          {
+          "type": "text",
+          "id": "left_inner",
+          "label": "enter date"
+        }
+         
+       ]
+     }
+  ],
+    "presets": [
+      {
+        "name": "section-9"
+      }
+    ]
+  
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

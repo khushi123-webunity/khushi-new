@@ -1,0 +1,98 @@
+<section class="about-banner">
+  <div class="page-width">
+    <img src="{{ 'Group 600.png' | asset_url }}" />
+    <div class="select--image">
+      {% if section.settings.main_img != blank %}
+        <img src="{{ section.settings.main_img | img_url:'master' }}">
+      {% endif %}
+    </div>
+
+    <h1 class="heading">{{ section.settings.text }}</h1>
+
+    <a class ="main--btn" href="{{ section.settings.btn_url }}">{{ section.settings.btn_text }}</a>
+    
+  </div>
+</section>
+
+<style>
+  .about-banner .heading{
+    font-size: {{ section.settings.font_size }}px;
+    color: {{ section.settings.body_text }};
+  }
+  a.main--btn {
+     color: {{ section.settings.button_text }};
+    background-color:{{ section.settings.background}};
+    text-decoration: none;  
+    padding: 10px 30px;
+    display: inline-block;
+}
+</style>
+
+
+
+
+{% schema %}
+  {
+    "name": "About-banner",
+    "settings": [
+      {
+        "type" : "image_picker",
+        "id" : "main_img",
+        "label" : "Enter Image"
+      },
+      {
+        "type" : "text",
+        "id" : "text",
+        "label" : "Enter Title"
+      },
+      {
+        "type": "range",
+        "id": "font_size",
+        "min": 12,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size",
+        "default": 25
+      },
+      {
+        "type": "color",
+        "id": "body_text",
+        "label": "Body text",
+        "default": "#000000"
+      },
+      {
+            "type": "color_background",
+            "id": "background",
+            "label": "Background",
+         "default": "#000000"
+          },
+      {
+        "type" : "text",
+        "id" : "btn_text",
+        "label" : "Enter Button"
+      },
+      {
+        "type" : "url",
+        "id" : "btn_url",
+        "label" : "Enter Button URL"
+      },
+      {
+        "type": "color",
+        "id": "button_text",
+        "label": "Body text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About-banner"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

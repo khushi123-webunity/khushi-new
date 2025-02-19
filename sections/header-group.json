@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "WELCOME TO BEAUTY & SPA CENTER",
+            "link": ""
+          }
+        },
+        "c0afff95-be04-469a-a249-84ffa3362900": {
+          "type": "announcement",
+          "settings": {
+            "text": "⭐️ Sale Up to 50% ⭐️",
+            "link": "shopify://collections"
+          }
+        },
+        "c881b4ce-877c-4796-8a5c-ece023f1b856": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping !!",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "c0afff95-be04-469a-a249-84ffa3362900",
+        "c881b4ce-877c-4796-8a5c-ece023f1b856"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "show_line_separator": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

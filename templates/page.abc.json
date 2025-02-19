@@ -1,0 +1,339 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19980245107000__bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Skincare Solution",
+            "heading_size": "h1"
+          }
+        },
+        "template--19980245107000__bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "We'll help you look and feel your best affordably. At Rela, we can help you with whatever you need fo your wellness and health.",
+            "text_style": "body"
+          }
+        },
+        "template--19980245107000__bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19980245107000__bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400-heading-1",
+        "template--19980245107000__bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400-text-1",
+        "template--19980245107000__bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400-buttons-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_1_8a4133da-13e7-448c-8828-927d5afd5a86.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "cc8867f2-1ac7-45a8-802c-0867883dcbad": {
+      "type": "skincare-solution",
+      "blocks": {
+        "d2bcb874-f417-4783-bee8-628a23cfe6a4": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_1171.png",
+            "con_head": "What is Skincare Solution?",
+            "description1": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  it to make a type specimen book. It has  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing,</p><p> </p><p>Lorem Ipsum passages, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p><p>And going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,</p>"
+          }
+        }
+      },
+      "block_order": [
+        "d2bcb874-f417-4783-bee8-628a23cfe6a4"
+      ],
+      "settings": {
+        "padding": 90
+      }
+    },
+    "a23ff0f1-d1d2-46c4-a6b8-28cbd7ac05dd": {
+      "type": "skincare-solution_sub",
+      "blocks": {
+        "4682be70-e193-4a5b-ad10-601d4545067c": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_1171_6d3a9788-2bb3-4803-a2ec-75a3c85fc16c.png",
+            "con_head": "The Benefits :",
+            "liquid_desc": "<div class=\"desc_main\">\n                      <div class=\"mark_icon\">\n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.6 13.8002L8.45 11.6502C8.26667 11.4669 8.03333 11.3752 7.75 11.3752C7.46667 11.3752 7.23333 11.4669 7.05 11.6502C6.86667 11.8336 6.775 12.0669 6.775 12.3502C6.775 12.6336 6.86667 12.8669 7.05 13.0502L9.9 15.9002C10.1 16.1002 10.3333 16.2002 10.6 16.2002C10.8667 16.2002 11.1 16.1002 11.3 15.9002L16.95 10.2502C17.1333 10.0669 17.225 9.83358 17.225 9.55024C17.225 9.26691 17.1333 9.03358 16.95 8.85024C16.7667 8.66691 16.5333 8.57524 16.25 8.57524C15.9667 8.57524 15.7333 8.66691 15.55 8.85024L10.6 13.8002ZM12 22.0002C10.6167 22.0002 9.31667 21.7376 8.1 21.2122C6.88333 20.6869 5.825 19.9746 4.925 19.0752C4.025 18.1752 3.31267 17.1169 2.788 15.9002C2.26333 14.6836 2.00067 13.3836 2 12.0002C2 10.6169 2.26267 9.31691 2.788 8.10024C3.31333 6.88358 4.02567 5.82524 4.925 4.92524C5.825 4.02524 6.88333 3.31291 8.1 2.78824C9.31667 2.26358 10.6167 2.00091 12 2.00024C13.3833 2.00024 14.6833 2.26291 15.9 2.78824C17.1167 3.31358 18.175 4.02591 19.075 4.92524C19.975 5.82524 20.6877 6.88358 21.213 8.10024C21.7383 9.31691 22.0007 10.6169 22 12.0002C22 13.3836 21.7373 14.6836 21.212 15.9002C20.6867 17.1169 19.9743 18.1752 19.075 19.0752C18.175 19.9752 17.1167 20.6879 15.9 21.2132C14.6833 21.7386 13.3833 22.0009 12 22.0002Z\" fill=\"#EFA697\"/>\n</svg></div>\n                      <div class=\"right-text\">It is a long established fact that a reader will be distracted.</div>\n                    </div>\n                    <div class=\"desc_main\">\n                      <div class=\"mark_icon\">\n                   \n                      \n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.6 13.8002L8.45 11.6502C8.26667 11.4669 8.03333 11.3752 7.75 11.3752C7.46667 11.3752 7.23333 11.4669 7.05 11.6502C6.86667 11.8336 6.775 12.0669 6.775 12.3502C6.775 12.6336 6.86667 12.8669 7.05 13.0502L9.9 15.9002C10.1 16.1002 10.3333 16.2002 10.6 16.2002C10.8667 16.2002 11.1 16.1002 11.3 15.9002L16.95 10.2502C17.1333 10.0669 17.225 9.83358 17.225 9.55024C17.225 9.26691 17.1333 9.03358 16.95 8.85024C16.7667 8.66691 16.5333 8.57524 16.25 8.57524C15.9667 8.57524 15.7333 8.66691 15.55 8.85024L10.6 13.8002ZM12 22.0002C10.6167 22.0002 9.31667 21.7376 8.1 21.2122C6.88333 20.6869 5.825 19.9746 4.925 19.0752C4.025 18.1752 3.31267 17.1169 2.788 15.9002C2.26333 14.6836 2.00067 13.3836 2 12.0002C2 10.6169 2.26267 9.31691 2.788 8.10024C3.31333 6.88358 4.02567 5.82524 4.925 4.92524C5.825 4.02524 6.88333 3.31291 8.1 2.78824C9.31667 2.26358 10.6167 2.00091 12 2.00024C13.3833 2.00024 14.6833 2.26291 15.9 2.78824C17.1167 3.31358 18.175 4.02591 19.075 4.92524C19.975 5.82524 20.6877 6.88358 21.213 8.10024C21.7383 9.31691 22.0007 10.6169 22 12.0002C22 13.3836 21.7373 14.6836 21.212 15.9002C20.6867 17.1169 19.9743 18.1752 19.075 19.0752C18.175 19.9752 17.1167 20.6879 15.9 21.2132C14.6833 21.7386 13.3833 22.0009 12 22.0002Z\" fill=\"#EFA697\"/>\n</svg>\n\n                      \n                      </div>\n                      <div class=\"right-text\">Various versions have evolved over the years, sometimes by accident.</div>\n                    </div>\n                    <div class=\"desc_main\">\n                      <div class=\"mark_icon\">\n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.6 13.8002L8.45 11.6502C8.26667 11.4669 8.03333 11.3752 7.75 11.3752C7.46667 11.3752 7.23333 11.4669 7.05 11.6502C6.86667 11.8336 6.775 12.0669 6.775 12.3502C6.775 12.6336 6.86667 12.8669 7.05 13.0502L9.9 15.9002C10.1 16.1002 10.3333 16.2002 10.6 16.2002C10.8667 16.2002 11.1 16.1002 11.3 15.9002L16.95 10.2502C17.1333 10.0669 17.225 9.83358 17.225 9.55024C17.225 9.26691 17.1333 9.03358 16.95 8.85024C16.7667 8.66691 16.5333 8.57524 16.25 8.57524C15.9667 8.57524 15.7333 8.66691 15.55 8.85024L10.6 13.8002ZM12 22.0002C10.6167 22.0002 9.31667 21.7376 8.1 21.2122C6.88333 20.6869 5.825 19.9746 4.925 19.0752C4.025 18.1752 3.31267 17.1169 2.788 15.9002C2.26333 14.6836 2.00067 13.3836 2 12.0002C2 10.6169 2.26267 9.31691 2.788 8.10024C3.31333 6.88358 4.02567 5.82524 4.925 4.92524C5.825 4.02524 6.88333 3.31291 8.1 2.78824C9.31667 2.26358 10.6167 2.00091 12 2.00024C13.3833 2.00024 14.6833 2.26291 15.9 2.78824C17.1167 3.31358 18.175 4.02591 19.075 4.92524C19.975 5.82524 20.6877 6.88358 21.213 8.10024C21.7383 9.31691 22.0007 10.6169 22 12.0002C22 13.3836 21.7373 14.6836 21.212 15.9002C20.6867 17.1169 19.9743 18.1752 19.075 19.0752C18.175 19.9752 17.1167 20.6879 15.9 21.2132C14.6833 21.7386 13.3833 22.0009 12 22.0002Z\" fill=\"#EFA697\"/>\n</svg>\n\n                        \n                       </div>\n                      <div class=\"right-text\">which is the same as saying through shrinking from toil and pain.</div>\n                    </div>\n  <div class=\"desc_main\">\n                      <div class=\"mark_icon\">\n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.6 13.8002L8.45 11.6502C8.26667 11.4669 8.03333 11.3752 7.75 11.3752C7.46667 11.3752 7.23333 11.4669 7.05 11.6502C6.86667 11.8336 6.775 12.0669 6.775 12.3502C6.775 12.6336 6.86667 12.8669 7.05 13.0502L9.9 15.9002C10.1 16.1002 10.3333 16.2002 10.6 16.2002C10.8667 16.2002 11.1 16.1002 11.3 15.9002L16.95 10.2502C17.1333 10.0669 17.225 9.83358 17.225 9.55024C17.225 9.26691 17.1333 9.03358 16.95 8.85024C16.7667 8.66691 16.5333 8.57524 16.25 8.57524C15.9667 8.57524 15.7333 8.66691 15.55 8.85024L10.6 13.8002ZM12 22.0002C10.6167 22.0002 9.31667 21.7376 8.1 21.2122C6.88333 20.6869 5.825 19.9746 4.925 19.0752C4.025 18.1752 3.31267 17.1169 2.788 15.9002C2.26333 14.6836 2.00067 13.3836 2 12.0002C2 10.6169 2.26267 9.31691 2.788 8.10024C3.31333 6.88358 4.02567 5.82524 4.925 4.92524C5.825 4.02524 6.88333 3.31291 8.1 2.78824C9.31667 2.26358 10.6167 2.00091 12 2.00024C13.3833 2.00024 14.6833 2.26291 15.9 2.78824C17.1167 3.31358 18.175 4.02591 19.075 4.92524C19.975 5.82524 20.6877 6.88358 21.213 8.10024C21.7383 9.31691 22.0007 10.6169 22 12.0002C22 13.3836 21.7373 14.6836 21.212 15.9002C20.6867 17.1169 19.9743 18.1752 19.075 19.0752C18.175 19.9752 17.1167 20.6879 15.9 21.2132C14.6833 21.7386 13.3833 22.0009 12 22.0002Z\" fill=\"#EFA697\"/>\n</svg></div>\n                      <div class=\"right-text\">These cases are perfectly simple and easy to distinguish In a free hour.</div>\n                    </div>\n                    <div class=\"desc_main\">\n                      <div class=\"mark_icon\">\n                   \n                      \n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.6 13.8002L8.45 11.6502C8.26667 11.4669 8.03333 11.3752 7.75 11.3752C7.46667 11.3752 7.23333 11.4669 7.05 11.6502C6.86667 11.8336 6.775 12.0669 6.775 12.3502C6.775 12.6336 6.86667 12.8669 7.05 13.0502L9.9 15.9002C10.1 16.1002 10.3333 16.2002 10.6 16.2002C10.8667 16.2002 11.1 16.1002 11.3 15.9002L16.95 10.2502C17.1333 10.0669 17.225 9.83358 17.225 9.55024C17.225 9.26691 17.1333 9.03358 16.95 8.85024C16.7667 8.66691 16.5333 8.57524 16.25 8.57524C15.9667 8.57524 15.7333 8.66691 15.55 8.85024L10.6 13.8002ZM12 22.0002C10.6167 22.0002 9.31667 21.7376 8.1 21.2122C6.88333 20.6869 5.825 19.9746 4.925 19.0752C4.025 18.1752 3.31267 17.1169 2.788 15.9002C2.26333 14.6836 2.00067 13.3836 2 12.0002C2 10.6169 2.26267 9.31691 2.788 8.10024C3.31333 6.88358 4.02567 5.82524 4.925 4.92524C5.825 4.02524 6.88333 3.31291 8.1 2.78824C9.31667 2.26358 10.6167 2.00091 12 2.00024C13.3833 2.00024 14.6833 2.26291 15.9 2.78824C17.1167 3.31358 18.175 4.02591 19.075 4.92524C19.975 5.82524 20.6877 6.88358 21.213 8.10024C21.7383 9.31691 22.0007 10.6169 22 12.0002C22 13.3836 21.7373 14.6836 21.212 15.9002C20.6867 17.1169 19.9743 18.1752 19.075 19.0752C18.175 19.9752 17.1167 20.6879 15.9 21.2132C14.6833 21.7386 13.3833 22.0009 12 22.0002Z\" fill=\"#EFA697\"/>\n</svg>\n\n                      \n                      </div>\n                      <div class=\"right-text\">The wise man therefore always holds in these matters to this principle of selection</div>\n                    </div>\n                    <div class=\"desc_main\">\n                      <div class=\"mark_icon\">\n<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.6 13.8002L8.45 11.6502C8.26667 11.4669 8.03333 11.3752 7.75 11.3752C7.46667 11.3752 7.23333 11.4669 7.05 11.6502C6.86667 11.8336 6.775 12.0669 6.775 12.3502C6.775 12.6336 6.86667 12.8669 7.05 13.0502L9.9 15.9002C10.1 16.1002 10.3333 16.2002 10.6 16.2002C10.8667 16.2002 11.1 16.1002 11.3 15.9002L16.95 10.2502C17.1333 10.0669 17.225 9.83358 17.225 9.55024C17.225 9.26691 17.1333 9.03358 16.95 8.85024C16.7667 8.66691 16.5333 8.57524 16.25 8.57524C15.9667 8.57524 15.7333 8.66691 15.55 8.85024L10.6 13.8002ZM12 22.0002C10.6167 22.0002 9.31667 21.7376 8.1 21.2122C6.88333 20.6869 5.825 19.9746 4.925 19.0752C4.025 18.1752 3.31267 17.1169 2.788 15.9002C2.26333 14.6836 2.00067 13.3836 2 12.0002C2 10.6169 2.26267 9.31691 2.788 8.10024C3.31333 6.88358 4.02567 5.82524 4.925 4.92524C5.825 4.02524 6.88333 3.31291 8.1 2.78824C9.31667 2.26358 10.6167 2.00091 12 2.00024C13.3833 2.00024 14.6833 2.26291 15.9 2.78824C17.1167 3.31358 18.175 4.02591 19.075 4.92524C19.975 5.82524 20.6877 6.88358 21.213 8.10024C21.7383 9.31691 22.0007 10.6169 22 12.0002C22 13.3836 21.7373 14.6836 21.212 15.9002C20.6867 17.1169 19.9743 18.1752 19.075 19.0752C18.175 19.9752 17.1167 20.6879 15.9 21.2132C14.6833 21.7386 13.3833 22.0009 12 22.0002Z\" fill=\"#EFA697\"/>\n</svg>\n\n                        \n                       </div>\n                      <div class=\"right-text\">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</div>\n                    </div>",
+            "desc": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  it to make a type specimen book. It has  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing, </p>"
+          }
+        }
+      },
+      "block_order": [
+        "4682be70-e193-4a5b-ad10-601d4545067c"
+      ],
+      "settings": {
+        "padding": 90
+      }
+    },
+    "64f42a2d-b698-4198-bf3a-82958d0049e0": {
+      "type": "easy_step",
+      "blocks": {
+        "f56a1442-6f5c-47c7-83c3-74b936fc6d41": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Ellipse_25.png",
+            "img_2": "shopify://shop_images/Group_1000.png",
+            "con_head": "Meeting",
+            "description1": "Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Sed pellentesque vel<br>vestibulum Ipsum standard"
+          }
+        },
+        "6f7148eb-0d12-4cd4-8492-e7c0db1d2340": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Ellipse_26.png",
+            "img_2": "shopify://shop_images/Group_1001.png",
+            "con_head": "Treatment",
+            "description1": "Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Sed pellentesque vel<br>vestibulum Ipsum standard"
+          }
+        },
+        "033e061e-fe1f-4d8c-b639-ddef03ea033e": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Ellipse_27.png",
+            "img_2": "shopify://shop_images/Group_1002.png",
+            "con_head": "Finalizing",
+            "description1": "Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Sed pellentesque vel<br>vestibulum Ipsum standard"
+          }
+        }
+      },
+      "block_order": [
+        "f56a1442-6f5c-47c7-83c3-74b936fc6d41",
+        "6f7148eb-0d12-4cd4-8492-e7c0db1d2340",
+        "033e061e-fe1f-4d8c-b639-ddef03ea033e"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Easy Steps",
+        "heading": "How It Works?",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br>in some form, by injected humour,"
+      }
+    },
+    "1845dc1a-094a-41b3-9e1c-46a2519a2791": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=bcA0dGJM5-k&pp=ygUMYmVhdXR5IHZpZGVv",
+        "cover_image": "shopify://shop_images/Rectangle_1173.png",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "ab3e4337-b8d9-40c3-879c-e83a26b50d30": {
+      "type": "best_deal",
+      "blocks": {
+        "56905422-bcf6-44cf-aa38-32e678e58aea": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/spa-_2__1.png",
+            "img_2": "shopify://shop_images/hot-stone_1.png",
+            "con_head": "Relaxing Massage..............................",
+            "description1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price": "$50.00",
+            "con_head2": "Hot stone Massage............................",
+            "description2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price2": "$76.00"
+          }
+        },
+        "c93a7cdd-d6ee-490a-8f2d-f1bf49ff76db": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/salt_1.png",
+            "img_2": "shopify://shop_images/skincare_1.png",
+            "con_head": "Scrub Massage...................................",
+            "description1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price": "$96.00",
+            "con_head2": "Supreme skincare...............................",
+            "description2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price2": "$85.00"
+          }
+        },
+        "9e1963a7-e49f-411e-b593-1834b8f1449d": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/aromatherapy_1.png",
+            "img_2": "shopify://shop_images/body-massage_1.png",
+            "con_head": "Aroma therapy.....................................",
+            "description1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price": "$28.00",
+            "con_head2": "fullbody massage................................",
+            "description2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price2": "$68.00"
+          }
+        },
+        "4c118114-be7e-485a-ba84-365f0fd7aba9": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/facial-mask_1.png",
+            "img_2": "shopify://shop_images/Group.png",
+            "con_head": "Calming facial....................................",
+            "description1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price": "$110.00",
+            "con_head2": "Sauna relex..........................................",
+            "description2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+            "price2": "$87.00"
+          }
+        },
+        "4cbf230b-c9b1-42d4-9118-d0b1924ad34d": {
+          "type": "slide",
+          "settings": {
+            "con_head": "",
+            "description1": "",
+            "price": "",
+            "con_head2": "",
+            "description2": "",
+            "price2": ""
+          }
+        }
+      },
+      "block_order": [
+        "56905422-bcf6-44cf-aa38-32e678e58aea",
+        "c93a7cdd-d6ee-490a-8f2d-f1bf49ff76db",
+        "9e1963a7-e49f-411e-b593-1834b8f1449d",
+        "4c118114-be7e-485a-ba84-365f0fd7aba9",
+        "4cbf230b-c9b1-42d4-9118-d0b1924ad34d"
+      ],
+      "settings": {
+        "sub_head": "Best Deal",
+        "heading": "Caring for your comforts",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br>in some form, by injected humour,"
+      }
+    },
+    "c6d477f6-f09a-4a35-938d-ec71c56709e1": {
+      "type": "client-experience",
+      "blocks": {
+        "a98c959c-d2f5-4e1d-a42e-8b33b29a3afb": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_28.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Aleesha John",
+            "occupation": "Manager"
+          }
+        },
+        "6307a07c-a5f2-48fe-9417-389f3ca335c7": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_29.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Rose Williams",
+            "occupation": "Skin Expert"
+          }
+        },
+        "424468b8-3324-4275-a187-76c0b870f629": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/image_1_3.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Aleesha John",
+            "occupation": "Skin Expert"
+          }
+        },
+        "079f3c50-af8f-4fa6-8f82-5d0cbee4d184": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_28.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Rose Williams",
+            "occupation": "Manager"
+          }
+        },
+        "47b097a7-c0e0-4cd7-bd36-2e57a4a766be": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_29.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Aleesha John",
+            "occupation": "Skin Expert"
+          }
+        }
+      },
+      "block_order": [
+        "a98c959c-d2f5-4e1d-a42e-8b33b29a3afb",
+        "6307a07c-a5f2-48fe-9417-389f3ca335c7",
+        "424468b8-3324-4275-a187-76c0b870f629",
+        "079f3c50-af8f-4fa6-8f82-5d0cbee4d184",
+        "47b097a7-c0e0-4cd7-bd36-2e57a4a766be"
+      ],
+      "settings": {
+        "padding": 100,
+        "sub_head": "Testimonials",
+        "heading": "Our Client’s Expression",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationin some form, by injected humour,"
+      }
+    },
+    "b27cc3b9-0daf-483a-a55d-169f5556565c": {
+      "type": "custom_collection",
+      "settings": {
+        "collection": "demo-collection"
+      }
+    },
+    "34e239a4-8fc9-4014-b37a-ddbb37af3268": {
+      "type": "custom_product",
+      "settings": {
+        "product": "winter-men-jacket"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bb8f7458-1f22-4ea7-bdc4-1db9d9a7f400",
+    "cc8867f2-1ac7-45a8-802c-0867883dcbad",
+    "a23ff0f1-d1d2-46c4-a6b8-28cbd7ac05dd",
+    "64f42a2d-b698-4198-bf3a-82958d0049e0",
+    "1845dc1a-094a-41b3-9e1c-46a2519a2791",
+    "ab3e4337-b8d9-40c3-879c-e83a26b50d30",
+    "c6d477f6-f09a-4a35-938d-ec71c56709e1",
+    "b27cc3b9-0daf-483a-a55d-169f5556565c",
+    "34e239a4-8fc9-4014-b37a-ddbb37af3268"
+  ]
+}

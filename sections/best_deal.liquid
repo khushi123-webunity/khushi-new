@@ -1,0 +1,211 @@
+
+
+
+<section class="best_deal">
+  <div class="page-width">
+    <div class="heading">
+  <h3 class="sub_heading">{{ section.settings.sub_head }}</h3>
+  <h2 class="head">{{ section.settings.heading }}</h2>
+  <p class="description_inner">{{ section.settings.description }}</p>
+    </div>
+
+    
+<div class="best-deal-block-parent">
+<div class="best-deal-blocks">
+      {% for block in section.blocks%}
+        <div class="best-deal-block-inner">
+          <div class ="best-deal-inner-image">
+             {% if block.settings.img_1 != blank %}
+             <img src="{{ block.settings.img_1 | img_url: "master" }}">
+              {% endif %}
+          </div>
+    <div class="best-concept">
+      <h3>{{ block.settings.con_head }}</h3>
+      <p>{{ block.settings.description1}}</p>      
+    </div>    
+    <div class="best-deal-price-content">
+       <span class="price-content">{{ block.settings.price }}</span>     
+    </div> 
+        </div>
+        {% endfor %}
+    </div>   
+  <div class="best-deal-blocks">
+      {% for block in section.blocks%}
+        <div class="best-deal-block-inner">
+          <div class ="best-deal-inner-image">
+             {% if block.settings.img_2 != blank %}
+             <img src="{{ block.settings.img_2 | img_url: "master" }}">
+              {% endif %}
+        
+          </div>
+    <div class="best-concept">
+      <h3>{{ block.settings.con_head2 }}</h3>
+      <p>{{ block.settings.description2}}</p>      
+    </div>    
+          <div class="best-deal-price-content">
+  <span class="price-content">{{ block.settings.price2}}</span>     
+    </div> 
+        </div>
+        {% endfor %}
+    </div>  
+</div>
+  </div>
+</section>
+             
+ <input type="radio" name="partytype" value="beauty">
+     <button id ="open-popup" class="popup-right-btn partytypebtn" data-value="beauty">
+         <span>beauty</span>
+     </button>
+                   <input type="radio" name="partytype" value="hey">
+                 <button id ="btn_open-popup" class="popup-right-btn1 partytypebtn" data-value="hey">
+                   <span>hey</span>
+                </button>
+            <input type="number" id="quantity" name="quantity" placeholder="number">
+                <div class="popup-main-btn">
+                  <a href="" id="nested-popup">
+                    accept
+                  </a>
+                </div>
+
+<script>
+$(document).ready(function () { 
+   $(document).on("click",".partytypebtn",function(){ 
+      let _value = $(this).attr('data-value');
+      $('[value="'+_value+'"]').prop("checked", true);
+    }); 
+  
+ $(document).on("click","#nested-popup",function(e){ 
+     e.preventDefault();
+      let _value = $('[name="partytype"]:checked').val();
+      var inputString = $("#quantity").val();
+     window.location.href = "/collections/all/"+_value+"+"+inputString;
+    }); 
+}); 
+</script>
+
+ 
+ <style>
+ input[type="radio"] {
+    visibility: hidden;
+}
+   /* #nested-popup{
+     display: none;
+   } */
+   button#open-popup {
+    padding: 15px;
+    background: antiquewhite;
+    border: 1px solid antiquewhite;
+    cursor: pointer;
+}
+ button#btn_open-popup {
+    padding: 15px;
+    background: antiquewhite;
+    border: 1px solid antiquewhite;
+    cursor: pointer;
+}
+   .popup-main-btn a {
+    background: burlywood;
+    color: black;
+    padding: 15px;
+    display: block;
+    width: 10%;
+    text-align: center;
+    margin-top: 15px;
+}
+   input#quantity {
+    padding: 15px;
+}
+   </style>
+
+
+
+
+  
+{% schema %}
+  {
+    "name": "best_deal",
+    "settings": [
+      {
+      "type": "text",
+      "id": "sub_head",
+      "label": "Sub heading"
+    },
+       
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "heading"
+    },
+     {
+      "type": "text",
+      "id": "description",
+      "label": "pro-description"
+    }  
+    ],
+    "blocks": [
+     {
+       "name": "title",
+       "type": "slide",
+       "settings": [
+       {
+          "type": "image_picker",
+          "id": "img_1",
+          "label": "Enter Image"
+        },
+         {
+          "type": "image_picker",
+          "id": "img_2",
+          "label": "Enter Image 2"
+        },
+        
+         
+         {
+          "type": "text",
+          "id": "con_head",
+          "label": "Enter Heading"
+        },
+         {
+          "type": "richtext",
+          "id": "description1",
+          "label": "Enter description"
+        },
+         {
+          "type": "text",
+          "id": "price",
+          "label": "Enter price"
+        } ,
+         {
+          "type": "text",
+          "id": "con_head2",
+          "label": "Enter Heading 2"
+        },
+         {
+          "type": "richtext",
+          "id": "description2",
+          "label": "Enter description 2"
+        },
+         {
+          "type": "text",
+          "id": "price2",
+          "label": "Enter price 2"
+        }
+        
+       ]
+     }
+  ],
+
+    
+    "presets": [
+      {
+        "name": "best_deal"
+      }
+    ]
+  
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,138 @@
+<section class="client-experience">
+  <div class="page-width">
+    <div class="heading">
+      <h3 class="sub_heading">{{ section.settings.sub_head }}</h3>
+      <h2 class="head">{{ section.settings.heading }}</h2>
+      <p class="description_inner">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="client-experience-blocks">
+      {% for block in section.blocks%}
+        <div class="client-block-inner">
+          <div class="client-block-content">
+            <p>{{ block.settings.client_para }}</p>
+            <div class="client-parent">
+          <div class ="client-inner-image">
+             {% if block.settings.img_1 != blank %}
+             <img src="{{ block.settings.img_1 | img_url: "master" }}">
+              {% endif %}
+          </div>
+        <div class="client_name">
+        <h3>{{ block.settings.name }}</h3>
+        <h2>{{ block.settings.occupation }}</h2>
+        </div>
+              <div class="quote_img">
+                {% if block.settings.quote_img %}
+                  <img src="{{ block.settings.quote_img | img_url:"master"}}">
+                  {% endif %}
+              </div>
+              </div>
+          </div>    
+        </div>
+        {% endfor %}
+    </div> 
+</div>
+</section>
+
+
+<script>
+  $( document ).ready(function() {
+      $('.client-experience-blocks').slick({
+        dots: true,
+       
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+  });
+</script>
+
+
+
+<style>
+  .client-experience{
+    padding-top:{{ section.settings.padding }}px;
+  }
+</style>
+
+
+
+
+{% schema %}
+  {
+    "name": "client-experience",
+    "settings": [
+      {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding top",
+         "min": 90,
+          "max": 190,
+          "step": 1,
+          "unit": "px",
+          "default": 90
+    },
+      {
+      "type": "text",
+      "id": "sub_head",
+      "label": "Sub heading"
+    },
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "heading"
+    },
+     {
+      "type": "text",
+      "id": "description",
+      "label": "pro-description"
+    }
+    ],
+    "blocks": [
+     {
+       "name": "Image With Block",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "text",
+          "id": "client_para",
+          "label": "enter description"
+         },
+       {
+          "type": "image_picker",
+          "id": "img_1",
+          "label": "Enter Image"
+        },
+         {
+          "type": "image_picker",
+          "id": "quote_img",
+          "label": "Enter Image"
+        },
+          {
+           "type": "text",
+          "id": "name",
+          "label": "enter Name"
+         },
+          {
+           "type": "text",
+          "id": "occupation",
+          "label": "enter description"
+         }
+       ]
+     }
+  ],
+    "presets": [
+      {
+        "name": "client-experience"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

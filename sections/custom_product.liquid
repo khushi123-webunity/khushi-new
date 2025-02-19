@@ -1,0 +1,136 @@
+<div class="custom_product">
+  <div class="page-width">
+    <div class="product-content">
+      {% assign product = section.settings.product %}
+
+      
+       {% for collection in product.collections %}
+        <div class="product-grid">
+          <div class="product-img">
+               <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">  
+          </div>
+          
+          <div class="product-title-parent">
+            <div class="product-title-inner">
+               {{ product.title }}
+          </div>
+          
+        
+ 
+
+             <div class="product-price">
+                {{ product.price | money }}
+          </div>
+            <div class="product-desc">
+               {{ product.description }}
+          </div>
+            
+              <div id="Quantity-Form-template--19980245238072__main" class="product-form__input product-form__quantity">
+                <label class="quantity__label form__label" for="Quantity-template--19980245238072__main">
+                  Quantity
+                  <span class="quantity__rules-cart no-js-hidden">
+                    <span class="loading-overlay hidden">
+                      <span class="loading-overlay__spinner">
+                        <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </span>
+                    </span>
+                  </span>
+                </label>
+                <quantity-input class="quantity">
+                  <button class="quantity__button no-js-hidden disabled" name="minus" type="button">
+                    <span class="visually-hidden">Decrease quantity for Supreme Skincare</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-minus" fill="none" viewBox="0 0 10 2">  <path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor"></path></svg>
+
+                  </button>
+                  <input class="quantity__input" type="number" name="quantity" id="Quantity-template--19980245238072__main" data-cart-quantity="1" data-min="1" min="1" step="1" value="1" form="product-form-template--19980245238072__main" max="null">
+                  <button class="quantity__button no-js-hidden" name="plus" type="button">
+                    <span class="visually-hidden">Increase quantity for Supreme Skincare</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-plus" fill="none" viewBox="0 0 10 10">  <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor"></path></svg>
+
+                  </button>
+                </quantity-input>
+                <div class="quantity__rules caption no-js-hidden"></div>
+              </div>
+            
+           <div class="collection-add">
+             <!-- 
+             <form method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+                <input type="submit" value="ADD TO CART" class="add-to-cart" />
+              </form> -->
+             
+             <input type="email" value="" name="properties[email]" />
+             <a href="javascript:void(0);" data="123456789">add to cart</a>
+            </div>
+            </div>
+          </div>
+    
+      {% endfor %}  
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  $(document).on('click','.add-to-cart',function(){
+    var data = $(this).parent().serialize();
+    var custom_data = $(this).prev().val();
+    data = {
+      id:"",
+      custom_data:properties[custom_data],
+      qty: ""
+    }
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() {
+       
+      },
+      error: function() {
+        
+      }
+    });
+  });
+  
+}); 
+</script>
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "custom_product",
+    "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      }
+    ],
+    "presets": [
+      {
+        "name": "custom_product",
+        "category": "text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

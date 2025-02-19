@@ -1,0 +1,32 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f32d5fe9-b30d-4ef3-95b7-638f23ebaeba": {
+      "type": "upseller-product",
+      "settings": {
+        "aricle-inner": "If your T-shirts don’t have a unique story, make the story about your customers.  Help the customer imagine how your products fit into their life.  Rather than calling your shirt “nice”, use power words that suit your tone like dazzling, spectacular, or kick ass.  Maybe it will make your customer look jaw-dropping, fearless, or stunning.  Build up your customer’s confidence and make them feel good about themselves and they will likely feel good about your T-shirts.Talk about benefits, not just features.  A feature is a fact.  A benefit is how your product improves your customer’s life.  Use benefits in your product descriptions to insert your T-shirts into your customer’s story.",
+        "product": "cosmetic-1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f32d5fe9-b30d-4ef3-95b7-638f23ebaeba"
+  ]
+}

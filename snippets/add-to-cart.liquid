@@ -1,0 +1,131 @@
+{% assign available = product.selected_or_first_available_variant.available %}
+{% assign product_id = product.selected_or_first_available_variant.id %}
+
+<div class="collection-cart">
+  <form method="post" action="/cart/add">
+    <input type="hidden" name="id" value="{{ product_id }}">
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1">
+    <input
+      type="hidden"
+      value=""
+      name="properties[email]"
+      {% if available %}
+      {% else %}
+        disabled
+      {% endif %}
+    >
+    <button onclick="showMsg(this)" class="add-to-cart-button" type="submit" data-add-to-cart>
+      <span class="cart-drawer-loader">
+        <div class="loader-ajax">
+          <select id="quantity-selector" onchange="updateCart('{{ product.variants[0].id }}', this.value)">
+            {% for i in (1..10) %}
+              <option value="{{ i }}">{{ i }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </span>
+      <span class="cart-btn-text">
+        {% if available == true %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
+            <path fill="#bae0bd" d="M15,28.5C7.556,28.5,1.5,22.444,1.5,15S7.556,1.5,15,1.5S28.5,7.556,28.5,15S22.444,28.5,15,28.5z"/>
+            <path fill="#5e9c76" d="M15,2c7.168,0,13,5.832,13,13s-5.832,13-13,13S2,22.168,2,15S7.832,2,15,2 M15,1 C7.268,1,1,7.268,1,15s6.268,14,14,14s14-6.268,14-14S22.732,1,15,1L15,1z"/><path fill="#fff" d="M8 14H22V16H8z"/>
+              <path fill="#fff" d="M8 14H22V16H8z" transform="rotate(90 15 15)"/>
+          </svg>
+        {% else %}
+          SOLD OUT
+        {% endif %}
+      </span>
+    </button>
+  </form>
+</div>
+
+<script>
+    function showMsg(element){
+        var loader = element.querySelector('.cart-drawer-loader .loader-ajax');
+        var text = element.querySelector('.cart-btn-text');
+        loader.style.display = 'block';
+        $(text).hide();
+
+      function updateCart(variantId, quantity) {
+      var params = {
+        type: 'POST',
+        url: '/cart/add.js',
+        data: 'quantity=' + quantity + '&id=' + variantId,
+        dataType: 'json',
+        success: function(data) {
+          console.log('Success:', data);
+          location.reload();
+        },
+        error: function(xhr, status, error) {
+          console.log('Error:', error);
+        }
+      };
+      $.ajax(params);
+   }
+  }
+
+
+   document.querySelector('.cart-form').addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   var form = event.target;
+   var formData = new FormData(form);
+
+   fetch('/cart/add.js', {
+      method: 'POST',
+      body: formData,
+   })
+   .then(function(response) {
+      return response.json();
+   })
+   .then(function(json) {
+      // Update the cart drawer quantity box here
+   })
+   .catch(function(error) {
+      console.error('Error:', error);
+   });
+  });
+</script>
+
+<style>
+    .loader-ajax {
+      display: none;
+  }
+   .qtydiv label{
+     display: block;
+     margin-bottom: 12px;
+     letter-spacing: 2.8px;
+     color: #747a7b;}
+
+  .qtydiv .btnqty{
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    font-size: 25px;
+    padding: 5px;
+    line-height: 5px;}
+
+  .qtydiv .btnqty.qtyminus{
+    margin-right: 8px;
+  }
+
+  .qtydiv .btnqty.qtyplus{
+    margin-left: 8px;
+  }
+
+  .qtydiv .quantity-input{
+    border: none;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    width: 50px;
+    outline: none;
+    display: inline-block;
+  }
+
+  .qtydiv {
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+</style>

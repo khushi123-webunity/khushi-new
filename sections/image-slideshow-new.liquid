@@ -1,0 +1,242 @@
+{{ 'image-slidershow.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<section class="image-slideshow slidshow-{{ section.id }}">
+  <div class="image-slideshow-text swiper-container">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide slideshow-image-inner">
+          {% if block.settings.img__1 != blank %}
+            <div class="back-img desk-img">
+              <div class="custom-main-content-bg-image">
+                {% comment %}
+                  <div
+                    class="image-with-text__media  gradient global-media-settings {% if block.settings.img__1 != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+                    {% if block.settings.img__1 != blank %}
+                      style="padding-bottom: {{ 1 | divided_by: block.settings.img__1.aspect_ratio | times: 100 }}%;"
+                    {% endif %}
+                  >
+                    {%- if block.settings.img__1 != blank -%}
+                      {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                      {%- capture sizes -%}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                  (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                  {%- endcapture -%}
+                      {{
+                        block.settings.img__1
+                        | image_url: width: 1500
+                        | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: block.settings['text-glow']
+                      }}
+                    {%- endif -%}
+                  </div>
+                {% endcomment %}
+                {%- if block.settings.img__1 != blank -%}
+                  <img src="{{ block.settings.img__1 | img_url: 'master' }}">
+                {% endif %}
+              </div>
+            </div>
+            <div class="back-img mob-img">
+              <div class="custom-main-content-bg-image">
+                {% comment %}
+                  <div
+                           class="image-with-text__media  gradient global-media-settings {% if block.settings.img__2 != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+                           {% if block.settings.img__2 != blank %}
+                             style="padding-bottom: {{ 1 | divided_by: block.settings.img__2.aspect_ratio | times: 100 }}%;"
+                           {% endif %}
+                         >
+                           {%- if block.settings.img__2 != blank -%}
+                             {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                             {%- capture sizes -%}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                  (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                  {%- endcapture -%}
+                             {{
+                               block.settings.img__2
+                               | image_url: width: 1500
+                               | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: block.settings['text-glow']
+                             }}
+                           {%- endif -%}
+                         </div>
+                {% endcomment %}
+              </div>
+            </div>
+          {% endif %}
+          {% if block.settings.SlideshowContent != blank %}
+            <div class="main_slidershow_block">
+              <div class="slidershow_content">
+                <h3
+                  class="slidershow_main_content {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }};"
+                  {% endif %}
+                >
+                  {{ block.settings.SlideshowContent }}
+                </h3>
+                {% if block.settings.ContentDesc != blank %}
+                  <div
+                    class="slidershow_desc {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    {{ block.settings.ContentDesc }}
+                  </div>
+                {% endif %}
+                {% if block.settings.BtnText != blank %}
+                  <a
+                    href="{% if block.settings.BtnUrl != blank %}{{ block.settings.BtnUrl }}{% else %}javascript:void(0){% endif %}"
+                    class="slidershow__btn {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    {{ block.settings.BtnText }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+<script>
+    const testimonialitem = new Swiper('.image-slideshow-text', {
+      loop: true,
+      slidesPerView: 1,
+      // autoplay: {
+      //     delay: 5000,
+      //     disableOnInteraction: false,
+      // },
+      effect: 'fade',
+      speed: 800,
+      pagination: {
+          el: '.swiper-pagination',
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+</script>
+<style>
+    .image-slider {
+      margin-top:{{section.settings.margintop}}px;
+      margin-bottom:{{section.settings.marginbottom}}px;
+    }
+    .img-text {
+      font-size:{{section.settings.fontsize}}px;
+    }
+      h3.slidershow_main_content {
+      font-size: 30px;
+   }
+   h3.slidershow_main_content,
+  .slidershow_desc p,
+  a.slidershow__btn{
+      color: {{section.settings.ContentColor}};
+   }
+  .slidershow_desc p{
+    font-size: {{section.settings.DescFontSize}}px;
+  }
+  .slidershow_content {
+    background: {{section.settings.BgColor}};
+  }
+  @media(min-width: 991px){
+    h3.slidershow_main_content {
+    font-size: {{ section.settings.ContentSize }}px;
+  }
+  }
+</style>
+{% schema %}
+{
+  "name": "image-slideshow-new",
+  "settings": [
+     {
+          "type": "range",
+          "id": "ContentSize",
+          "min": 30,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Content Heading size",
+          "default": 90
+        },
+        {
+          "type": "range",
+          "id": "DescFontSize",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Content Content size",
+          "default": 16
+        },
+        {
+          "type": "color",
+          "id": "ContentColor",
+          "label": "Enter Font Color"
+        },
+       {
+          "type": "color",
+          "id": "BgColor",
+          "label": "Enter Background Color"
+    }
+  ],
+  "blocks": [
+   {
+     "name": "Image With Block",
+     "type": "slide",
+     "settings": [
+     {
+        "type": "image_picker",
+        "id": "img__1",
+        "label": "Enter Image(desktop view image)"
+      },
+        {
+        "type": "image_picker",
+        "id": "img__2",
+        "label": "Enter Image (mobile view image)"
+      },
+       {
+        "type": "text",
+        "id": "SlideshowContent",
+        "label": "Enter Content"
+      },
+       {
+        "type": "richtext",
+        "id": "ContentDesc",
+        "label": "Enter Description"
+      },
+       {
+        "type": "url",
+        "id": "BtnUrl",
+        "label": "Enter Button URL"
+      },
+       {
+        "type": "text",
+        "id": "BtnText",
+        "label": "Enter Button Name"
+      }
+     ]
+   }
+],
+   "presets": [
+    {
+      "name": "image-slideshow-new"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

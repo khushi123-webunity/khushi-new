@@ -1,0 +1,1009 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Beauty & SPA Center",
+            "heading_size": "h1"
+          }
+        },
+        "1c871b3d-0a22-4c53-bcff-39df58f72b27": {
+          "type": "text",
+          "settings": {
+            "text": "We'll help you look and feel your best affordably. At Rela, we can help you with whatever you need fo your wellness and health.",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Book An Appointment",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "1c871b3d-0a22-4c53-bcff-39df58f72b27",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_1.png",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "inverse",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "4262a8f5-d9d4-4c07-a84c-0f3ca63e97bf": {
+      "type": "section-2",
+      "blocks": {
+        "1bdd2dd8-ed07-4eaf-878f-f8d08e9671d3": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/skin_care.png",
+            "con_head": "Skin Care",
+            "description1": "Aliquam augue suscipit luctus and neque<br>purus ipsum at neque dolor primis libero <br>tempus blandit",
+            "btn": "Read More"
+          }
+        },
+        "6479646b-f5bb-4ed1-b54b-e9bba412a0fd": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/massage_therapy.png",
+            "con_head": "Massage Therapy",
+            "description1": "Aliquam augue suscipit luctus and neque <br>purus ipsum at neque dolor primis libero <br>tempus blandit",
+            "btn": "Read More"
+          }
+        },
+        "ed73a812-5166-4148-80fe-932b7763af73": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/body_treatment.png",
+            "con_head": "Body Treatments",
+            "description1": "Aliquam augue suscipit luctus and neque <br>purus ipsum at neque dolor primis libero <br>tempus blandit",
+            "btn": "Read More"
+          }
+        },
+        "7d2d4d2d-8f10-40f4-9516-fe3d63530af4": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/waxing.png",
+            "con_head": "Waxing",
+            "description1": "Aliquam augue suscipit luctus and neque <br>purus ipsum at neque dolor primis libero <br>tempus blandit",
+            "btn": "Read More"
+          }
+        }
+      },
+      "block_order": [
+        "1bdd2dd8-ed07-4eaf-878f-f8d08e9671d3",
+        "6479646b-f5bb-4ed1-b54b-e9bba412a0fd",
+        "ed73a812-5166-4148-80fe-932b7763af73",
+        "7d2d4d2d-8f10-40f4-9516-fe3d63530af4"
+      ],
+      "settings": {
+        "padding": 100,
+        "audio_file": "https://cdn.shopify.com/s/files/1/0797/3696/3384/files/Burgundy_-_All_Night_freetouse.com.mp3?v=1717997224",
+        "sub_head": "Welcome",
+        "heading": "Beauty and Spa Center",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br>in some form, by injected humour,"
+      }
+    },
+    "ce97b5f3-7b04-47bc-a605-880abac412b5": {
+      "type": "section-3",
+      "blocks": {
+        "c3620303-8304-42b1-9e8f-ba7af220a0ae": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/aromtherapy.png",
+            "con_head": "Aromatherapy",
+            "description1": "Mauris pretium ipsum eget dui mollis<br> semper. Praesent gravida id urna <br>fringilla pulvinar"
+          }
+        },
+        "53e5d340-2f31-47ac-9df4-f50f137cf0b4": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/massage.png",
+            "con_head": "Massage",
+            "description1": "Mauris pretium ipsum eget dui mollis<br> semper. Praesent gravida id urna <br>fringilla pulvinar"
+          }
+        },
+        "bc3ab8c3-4f02-494d-8023-f9908745e203": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/hydro.png",
+            "con_head": "Hydrotherapy",
+            "description1": "Mauris pretium ipsum eget dui mollis<br> semper. Praesent gravida id urna <br>fringilla pulvinar"
+          }
+        }
+      },
+      "block_order": [
+        "c3620303-8304-42b1-9e8f-ba7af220a0ae",
+        "53e5d340-2f31-47ac-9df4-f50f137cf0b4",
+        "bc3ab8c3-4f02-494d-8023-f9908745e203"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "feel Special",
+        "heading": "Enjoy the difference",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration <br>in some form, by injected humour,"
+      }
+    },
+    "6ec91ef0-8212-4208-9e97-f91b02674df0": {
+      "type": "section-4",
+      "blocks": {
+        "1ad2b88a-e4f2-4d55-a3f6-dae28d925fa0": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/standard_1.png",
+            "con_head": "Standard Services",
+            "description1": "Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit. Sed pellentesque vel <br>vestibulum."
+          }
+        },
+        "2950f35f-8d3c-4646-9467-5ba07137ac73": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/image_2023_05_30T11_55_45_150Z_ebc4979c-69a1-42dc-b516-eadf62aee506.png",
+            "con_head": "Daily Program",
+            "description1": "Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit. Sed pellentesque vel <br>vestibulum."
+          }
+        },
+        "662d6274-422b-46d1-88f7-97f386d5fb3f": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/gift-cards.png",
+            "con_head": "Gift Cards",
+            "description1": "Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit. Sed pellentesque vel <br>vestibulum."
+          }
+        }
+      },
+      "block_order": [
+        "1ad2b88a-e4f2-4d55-a3f6-dae28d925fa0",
+        "2950f35f-8d3c-4646-9467-5ba07137ac73",
+        "662d6274-422b-46d1-88f7-97f386d5fb3f"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Features",
+        "heading": "Exclusive Features",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration <br>in some form, by injected humour,"
+      }
+    },
+    "27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19980244910392__27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7-16895828013dde738a-1": {
+          "type": "text",
+          "settings": {
+            "text": "Special Offer",
+            "text_style": "subtitle"
+          }
+        },
+        "template--19980244910392__27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7-16895828013dde738a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>This Week 30% Off Massage.</em>",
+            "heading_size": "h1"
+          }
+        },
+        "template--19980244910392__27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7-16895828013dde738a-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Find Out More",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19980244910392__27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7-16895828013dde738a-1",
+        "template--19980244910392__27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7-16895828013dde738a-0",
+        "template--19980244910392__27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7-16895828013dde738a-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_17_07c86ce1-402c-415f-9657-05d4079bc435.png",
+        "image_overlay_opacity": 30,
+        "image_height": "adapt",
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "b24d51ab-e804-492b-9f27-71a3fce27745": {
+      "type": "section-5",
+      "blocks": {
+        "0ecedbf1-7b49-4b92-93c6-64ea828dd796": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/brand-15_1.png"
+          }
+        },
+        "e020b42d-02c5-4552-8baf-091aac61621d": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/brand-15_2.png"
+          }
+        },
+        "2771a5c3-35d3-4261-ada2-251b6680a6e0": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/brand-15_3.png"
+          }
+        },
+        "e73417e6-678b-4bf1-bd92-b81f72a7531f": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/brand-15_4.png"
+          }
+        },
+        "ba581cf1-06cf-470e-b65e-952e59cffde0": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/brand-15_5.png"
+          }
+        }
+      },
+      "block_order": [
+        "0ecedbf1-7b49-4b92-93c6-64ea828dd796",
+        "e020b42d-02c5-4552-8baf-091aac61621d",
+        "2771a5c3-35d3-4261-ada2-251b6680a6e0",
+        "e73417e6-678b-4bf1-bd92-b81f72a7531f",
+        "ba581cf1-06cf-470e-b65e-952e59cffde0"
+      ],
+      "settings": {}
+    },
+    "bb5c2cc2-a0a9-4640-a002-f330f041e225": {
+      "type": "section-6",
+      "blocks": {
+        "9a17b152-6273-4b32-8293-4a3c202bf988": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_28_a63e18f5-0396-4eed-9750-5014b4d9a88c.png",
+            "con_head": "Skincare Solutions",
+            "description1": "There are many variations of passages of <br>Lorem Ipsum available, but the have <br>suffered alteration in some form,",
+            "btn_1": "Read More"
+          }
+        },
+        "4fda46c0-d1ad-48c8-9c05-5f14fc19c05b": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_29.png",
+            "con_head": "Body Treatments",
+            "description1": "There are many variations of passages of <br>Lorem Ipsum available, but the have <br>suffered alteration in some form,",
+            "btn_1": "Read More"
+          }
+        },
+        "f2c28029-9215-43ad-a025-6342c258cf5f": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_30.png",
+            "con_head": "Massage Therapy",
+            "description1": "There are many variations of passages of <br>Lorem Ipsum available, but the have <br>suffered alteration in some form,",
+            "btn_1": "Read More"
+          }
+        },
+        "0cab1f04-c5b7-4904-b0f3-6897873cb1d4": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_031.png",
+            "con_head": "Oils & Aromatherapy",
+            "description1": "There are many variations of passages of <br>Lorem Ipsum available, but the have <br>suffered alteration in some form,",
+            "btn_1": "Read More"
+          }
+        },
+        "slide_N84A9C": {
+          "type": "slide",
+          "settings": {
+            "con_head": "",
+            "description1": "",
+            "btn_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "9a17b152-6273-4b32-8293-4a3c202bf988",
+        "4fda46c0-d1ad-48c8-9c05-5f14fc19c05b",
+        "f2c28029-9215-43ad-a025-6342c258cf5f",
+        "0cab1f04-c5b7-4904-b0f3-6897873cb1d4",
+        "slide_N84A9C"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Our Services",
+        "heading": "Nature's beauty is art.",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+      }
+    },
+    "0812bb14-4d0c-4b79-859d-71fdec4d58b3": {
+      "type": "section-7",
+      "blocks": {
+        "f109efca-dc16-42f1-9ab5-c9066ca5df7b": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/beatingheartvideo_2.gif"
+          }
+        },
+        "6aa64313-12b7-4eb5-893f-8dfcd8fe6d03": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/sport.png"
+          }
+        },
+        "37b7dc7a-f411-4edd-8123-b56de6f3f6d1": {
+          "type": "slide",
+          "settings": {
+            "img_1": "shopify://shop_images/theraptic.png"
+          }
+        }
+      },
+      "block_order": [
+        "f109efca-dc16-42f1-9ab5-c9066ca5df7b",
+        "6aa64313-12b7-4eb5-893f-8dfcd8fe6d03",
+        "37b7dc7a-f411-4edd-8123-b56de6f3f6d1"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Gift Cards",
+        "heading": "Experience Life With Color",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationin some form, by injected humour,"
+      }
+    },
+    "video_yRyNjG": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/ezgif-5-09fc110a75 (1).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "051f2c34-0bac-4ab2-9f4f-f36b7a1af6f1": {
+      "type": "section-8",
+      "blocks": {
+        "6424bf61-b993-41a9-ad39-f3505b6f8048": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/combination.png",
+            "con_head": "Combination Massage",
+            "description1": "Dtox Custom Massage(35 min)",
+            "description2": "Dtox Custom Facial(40 min)",
+            "price": "$58.00",
+            "btn_1": "Read More"
+          }
+        },
+        "b6353203-1308-45d5-a686-63144b4a46ab": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/supreme.png",
+            "con_head": "Supreme Skincare",
+            "description1": "Smoothing Skin Warp(47 min)",
+            "description2": "Organic sea salt scrub(20 min)",
+            "price": "$99.00",
+            "btn_1": "Read More"
+          }
+        },
+        "87a2cc67-bc5c-4bd1-90eb-ebc5f699a8fc": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/image5.png",
+            "con_head": "Hot Stones Massage",
+            "description1": "Organic sea salt scrub(40 min)",
+            "description2": "Smoothing Skin Warp(55 min)",
+            "price": "$102.00",
+            "btn_1": "Read More"
+          }
+        },
+        "487f8199-7458-4dd8-b53a-01469cd480d4": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/relaxing.png",
+            "con_head": "Relaxing Massage",
+            "description1": "Dtox Custom Massage(35 min)",
+            "description2": "Dtox Custom Facial(40 min)",
+            "price": "$99.00",
+            "btn_1": "Read More"
+          }
+        }
+      },
+      "block_order": [
+        "6424bf61-b993-41a9-ad39-f3505b6f8048",
+        "b6353203-1308-45d5-a686-63144b4a46ab",
+        "87a2cc67-bc5c-4bd1-90eb-ebc5f699a8fc",
+        "487f8199-7458-4dd8-b53a-01469cd480d4"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Packages",
+        "heading": "Essential & Balance Packages",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br>in some form, by injected humour,"
+      }
+    },
+    "b3ac1cc5-d859-484a-bab5-475ca97a238a": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "lipstick",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b81e6456-c9f7-4036-8042-06e41b1e0d3a": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "demo-collection",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1e8f253a-6c1d-4937-9d56-9df86c75695f": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19980244910392__1e8f253a-6c1d-4937-9d56-9df86c75695f-1689756451156d7973-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "combination-massage"
+          }
+        },
+        "template--19980244910392__1e8f253a-6c1d-4937-9d56-9df86c75695f-1689756451156d7973-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "supreme-skincare"
+          }
+        },
+        "template--19980244910392__1e8f253a-6c1d-4937-9d56-9df86c75695f-1689756451156d7973-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hot-stones-massage"
+          }
+        },
+        "8d69140e-223d-488e-be6b-bbe9ce375dee": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "relaxing-massage"
+          }
+        }
+      },
+      "block_order": [
+        "template--19980244910392__1e8f253a-6c1d-4937-9d56-9df86c75695f-1689756451156d7973-0",
+        "template--19980244910392__1e8f253a-6c1d-4937-9d56-9df86c75695f-1689756451156d7973-1",
+        "template--19980244910392__1e8f253a-6c1d-4937-9d56-9df86c75695f-1689756451156d7973-2",
+        "8d69140e-223d-488e-be6b-bbe9ce375dee"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9261626d-64bb-44d3-b778-b4b2c242740f": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19980244910392__9261626d-64bb-44d3-b778-b4b2c242740f-1689653891d6cbc45b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Book An Appointment Online",
+            "heading_size": "h1"
+          }
+        },
+        "template--19980244910392__9261626d-64bb-44d3-b778-b4b2c242740f-1689653891d6cbc45b-1": {
+          "type": "text",
+          "settings": {
+            "text": "For your convenience, you can book your appointment online with our secureonline booking tool — or call us at (123) 456-7890.",
+            "text_style": "body"
+          }
+        },
+        "template--19980244910392__9261626d-64bb-44d3-b778-b4b2c242740f-1689653891d6cbc45b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Make An Appointment",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19980244910392__9261626d-64bb-44d3-b778-b4b2c242740f-1689653891d6cbc45b-0",
+        "template--19980244910392__9261626d-64bb-44d3-b778-b4b2c242740f-1689653891d6cbc45b-1",
+        "template--19980244910392__9261626d-64bb-44d3-b778-b4b2c242740f-1689653891d6cbc45b-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/booking.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "30979ad3-9779-4cc3-a196-1def1e689b19": {
+      "type": "section-9",
+      "blocks": {
+        "0612c9f8-1d94-404c-8398-f0e3f9098606": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/blog-1.png",
+            "img_2": "shopify://shop_images/127278305716352401074513_1.png",
+            "con_head": "Massage Theraphy",
+            "desc": "It is a long established fact that a reader will be by the readable<br>content page when looking at its layout. he point of using Lorem<br>Ipsum is that it has a more-or-less normal",
+            "inner_content": "Alexia Nason",
+            "left_inner": "15th Mar 2020"
+          }
+        },
+        "0d1c0260-fb3d-456b-8807-56fc45a5d417": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/Rectangle_50.png",
+            "con_head": "Aromatherapy",
+            "desc": "It is a long established fact that a reader will be by the readable<br>content page when looking at its layout. he point of using Lorem<br>Ipsum is that it has a more-or-less normal",
+            "inner_content": "Jessica Dewil",
+            "left_inner": "15th Mar 2020"
+          }
+        },
+        "a9f15c30-defa-43e2-9ba3-891e9da04cd8": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "img_1": "shopify://shop_images/blog-3.png",
+            "con_head": "Facial Massage Treatment",
+            "desc": "It is a long established fact that a reader will be by the readable<br>content page when looking at its layout. he point of using Lorem<br> Ipsum is that it has a more-or-less normal",
+            "inner_content": "Alexa Nayka",
+            "left_inner": "15th Mar 2020"
+          }
+        }
+      },
+      "block_order": [
+        "0612c9f8-1d94-404c-8398-f0e3f9098606",
+        "0d1c0260-fb3d-456b-8807-56fc45a5d417",
+        "a9f15c30-defa-43e2-9ba3-891e9da04cd8"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Our Blog",
+        "heading": "Latest Post From Blog",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br>in some form, by injected humour,"
+      }
+    },
+    "a4dfa6e6-f821-4d60-a8fb-213a0b8d4c0f": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "blog": "blog",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7467ac3f-1231-4577-9f5d-ea5645bff654": {
+      "type": "contact-us",
+      "disabled": true,
+      "settings": {
+        "sub_head": "Contact Us",
+        "heading": "Have Any Questions?",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br> in some form, by injected humour,"
+      }
+    },
+    "94a2cf8d-40bc-4d82-9b00-11ff379b0675": {
+      "type": "contact_us",
+      "blocks": {
+        "1eb96812-c389-4ecb-8fec-393d88a02371": {
+          "type": "slide",
+          "settings": {
+            "con_head": "Contact Us"
+          }
+        }
+      },
+      "block_order": [
+        "1eb96812-c389-4ecb-8fec-393d88a02371"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Contact Us",
+        "heading": "Have Any Questions?",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration<br>in some form, by injected humour,"
+      }
+    },
+    "b2ae476e-13b0-4d01-a983-efd18698085e": {
+      "type": "client-experience",
+      "blocks": {
+        "0353d09e-9e90-4223-91e0-1ff7bc5e0601": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_28.png",
+            "quote_img": "shopify://shop_images/beatingheartvideo_2.gif",
+            "name": "Aleesha John",
+            "occupation": "Manager"
+          }
+        },
+        "71e37e3b-b653-481f-a4e6-cd188c09208b": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_29.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Rose Williams",
+            "occupation": "Skin Expert"
+          }
+        },
+        "f31f67a0-55f4-4998-8908-74849026a646": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_28_b273d092-2714-41f0-b6d7-7e875043ba6c.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Aleesha John",
+            "occupation": "Manager"
+          }
+        },
+        "c47feaf3-8111-4bf5-a910-4a107b014deb": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/image_1_3.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Eleanor",
+            "occupation": "Beauty Therapist"
+          }
+        },
+        "dba0fe4b-2849-409c-a19a-f8ab107959a0": {
+          "type": "slide",
+          "settings": {
+            "client_para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "img_1": "shopify://shop_images/Ellipse_29.png",
+            "quote_img": "shopify://shop_images/Group_1323.png",
+            "name": "Rose Williams",
+            "occupation": "Skin Expert"
+          }
+        }
+      },
+      "block_order": [
+        "0353d09e-9e90-4223-91e0-1ff7bc5e0601",
+        "71e37e3b-b653-481f-a4e6-cd188c09208b",
+        "f31f67a0-55f4-4998-8908-74849026a646",
+        "c47feaf3-8111-4bf5-a910-4a107b014deb",
+        "dba0fe4b-2849-409c-a19a-f8ab107959a0"
+      ],
+      "settings": {
+        "padding": 90,
+        "sub_head": "Testimonials",
+        "heading": "Our Client’s Expression",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+      }
+    },
+    "298ec39c-4fc9-4fee-b656-261d4180fdb4": {
+      "type": "slider--demo",
+      "blocks": {
+        "964ef0d5-7e73-407e-8edf-983632e5818d": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/Rectangle_50.png",
+            "title": "aqromtherapy",
+            "desc": ""
+          }
+        },
+        "baf50638-2299-40d4-9444-e3397479791f": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/combination.png",
+            "title": "title",
+            "desc": ""
+          }
+        },
+        "a85ff139-91f4-4256-a23b-c2193e8a0569": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/supreme.png",
+            "title": "",
+            "desc": ""
+          }
+        },
+        "977479c1-81dd-4690-8bb3-747e76178c27": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/relaxing.png",
+            "title": "",
+            "desc": ""
+          }
+        },
+        "ccf412c7-133c-4969-8ab1-08642e2abde0": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/Rectangle_031.png",
+            "title": "",
+            "desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "964ef0d5-7e73-407e-8edf-983632e5818d",
+        "baf50638-2299-40d4-9444-e3397479791f",
+        "a85ff139-91f4-4256-a23b-c2193e8a0569",
+        "977479c1-81dd-4690-8bb3-747e76178c27",
+        "ccf412c7-133c-4969-8ab1-08642e2abde0"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "46de63f5-d947-4974-b093-03bbbf0c8a09": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19980244910392__46de63f5-d947-4974-b093-03bbbf0c8a09-168975601939aedbbc-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "demo-collection"
+          }
+        },
+        "template--19980244910392__46de63f5-d947-4974-b093-03bbbf0c8a09-168975601939aedbbc-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "template--19980244910392__46de63f5-d947-4974-b093-03bbbf0c8a09-168975601939aedbbc-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women-black-long-coat"
+          }
+        },
+        "4b721cbf-ef7e-4e5d-ad37-727173fbb078": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "demo-collection"
+          }
+        }
+      },
+      "block_order": [
+        "template--19980244910392__46de63f5-d947-4974-b093-03bbbf0c8a09-168975601939aedbbc-0",
+        "template--19980244910392__46de63f5-d947-4974-b093-03bbbf0c8a09-168975601939aedbbc-1",
+        "template--19980244910392__46de63f5-d947-4974-b093-03bbbf0c8a09-168975601939aedbbc-2",
+        "4b721cbf-ef7e-4e5d-ad37-727173fbb078"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d03bda77-db0d-4980-9dcf-77701410ae05": {
+      "type": "custom_product",
+      "settings": {
+        "product": "packaging-makeup"
+      }
+    },
+    "8a23523f-0380-4d15-96d4-47f5aebdee8d": {
+      "type": "video-slider",
+      "blocks": {
+        "25d0e3ef-664b-4afc-a6f1-341eabab71cf": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/b6a1183effc84a2c970a15a38ed45e47.HD-720p-1.6Mbps-20529319.mp4"
+          }
+        },
+        "e8a274ed-5ecb-4d18-a560-3c73ad0e7c80": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/b6a1183effc84a2c970a15a38ed45e47.HD-720p-1.6Mbps-20529319.mp4"
+          }
+        },
+        "5a194aa9-db6c-4767-b2cf-55cb0be4c99b": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/373bc4f8f99140348db0779542c1df94.HD-1080p-7.2Mbps-20575813.mp4"
+          }
+        },
+        "a3c92295-dd45-4894-bf7c-c4213d79a950": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/b6a1183effc84a2c970a15a38ed45e47.HD-720p-1.6Mbps-20529319.mp4"
+          }
+        },
+        "d6a5f82a-11ca-4445-941b-715f5edd6168": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/373bc4f8f99140348db0779542c1df94.HD-1080p-7.2Mbps-20575813.mp4"
+          }
+        },
+        "d8eb752b-cd52-43b7-bedb-633d27f1c088": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/373bc4f8f99140348db0779542c1df94.HD-1080p-7.2Mbps-20575813.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "25d0e3ef-664b-4afc-a6f1-341eabab71cf",
+        "e8a274ed-5ecb-4d18-a560-3c73ad0e7c80",
+        "5a194aa9-db6c-4767-b2cf-55cb0be4c99b",
+        "a3c92295-dd45-4894-bf7c-c4213d79a950",
+        "d6a5f82a-11ca-4445-941b-715f5edd6168",
+        "d8eb752b-cd52-43b7-bedb-633d27f1c088"
+      ],
+      "settings": {
+        "video-heading": "Winter glow",
+        "video-slider--desc": "<p><strong>Worcestershire's ultimate Christmas celebration</strong>, Winter Glow, is back for 2023! Immerse yourself in all things seasonal, with an impressive line-up of festive activities and excitement on offer in Malvern this winter.</p>",
+        "btn--url": "https://apnafbg.com/fair-and-lovely-winter-glow-172",
+        "video-slider-btn": "More details"
+      }
+    },
+    "5049a9eb-0899-43ab-9def-9f3813a07728": {
+      "type": "background-custom",
+      "settings": {
+        "bg-image": "shopify://shop_images/8aa9fb2b0079f0db33cde5c687b337e9.jpg",
+        "heading": "This is custom section.",
+        "richtext": "<p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsuessentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+        "btn-name": "Read more",
+        "btn-url": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "4262a8f5-d9d4-4c07-a84c-0f3ca63e97bf",
+    "ce97b5f3-7b04-47bc-a605-880abac412b5",
+    "6ec91ef0-8212-4208-9e97-f91b02674df0",
+    "27ac3a3c-b36f-4a83-ac5d-dd818d7de4c7",
+    "b24d51ab-e804-492b-9f27-71a3fce27745",
+    "bb5c2cc2-a0a9-4640-a002-f330f041e225",
+    "0812bb14-4d0c-4b79-859d-71fdec4d58b3",
+    "video_yRyNjG",
+    "051f2c34-0bac-4ab2-9f4f-f36b7a1af6f1",
+    "b3ac1cc5-d859-484a-bab5-475ca97a238a",
+    "b81e6456-c9f7-4036-8042-06e41b1e0d3a",
+    "1e8f253a-6c1d-4937-9d56-9df86c75695f",
+    "9261626d-64bb-44d3-b778-b4b2c242740f",
+    "30979ad3-9779-4cc3-a196-1def1e689b19",
+    "a4dfa6e6-f821-4d60-a8fb-213a0b8d4c0f",
+    "7467ac3f-1231-4577-9f5d-ea5645bff654",
+    "94a2cf8d-40bc-4d82-9b00-11ff379b0675",
+    "b2ae476e-13b0-4d01-a983-efd18698085e",
+    "298ec39c-4fc9-4fee-b656-261d4180fdb4",
+    "46de63f5-d947-4974-b093-03bbbf0c8a09",
+    "d03bda77-db0d-4980-9dcf-77701410ae05",
+    "8a23523f-0380-4d15-96d4-47f5aebdee8d",
+    "5049a9eb-0899-43ab-9def-9f3813a07728"
+  ]
+}

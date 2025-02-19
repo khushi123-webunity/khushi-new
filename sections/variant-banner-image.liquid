@@ -1,0 +1,295 @@
+{{ 'product-variant-banner.css' | asset_url | stylesheet_tag }}
+{% assign checked = section.settings.Varchecked %}
+{% if checked == true %}
+  {% assign selectedProduct = product %}
+{% else %}
+  {% assign selectedProduct = product.metafields.custom.variant_banner_product.value %}
+{% endif %}
+
+{% if selectedProduct %}
+  {% assign varMainImage = '' %}
+  {% for variant in selectedProduct.variants %}
+    {% assign varMainImage = variant.metafields.custom.variant_popup_image %}
+  {% endfor %}
+
+  {% if varMainImage != blank %}
+    <section class="product_variant_details prod_var_{{ section.id }}">
+      <div class="page-width products_width">
+        <div class="prod_poup_main">
+          {% if section.settings.Title != blank %}
+            <h2 class="main_products_popup_title">
+              {{ section.settings.Title }}
+            </h2>
+          {% endif %}
+          {% if section.settings.InnerTitle != blank %}
+            <span class="main_popup_innertitle">
+              {{ section.settings.InnerTitle }}
+            </span>
+          {% endif %}
+          {%- for option in selectedProduct.options_with_values -%}
+            <div class="product-variant-item">
+              {%- for value in option.values -%}
+                {% assign varMainImage = '' %}
+                {%- for variant in selectedProduct.variants -%}
+                  {% if variant.title == value %}
+                    {% assign varMainImage = variant.metafields.custom.variant_popup_image %}
+                  {% endif %}
+                {%- endfor -%}
+                {% if varMainImage != blank %}
+                  <div class="variant_popup_image_details">
+                    <img src="{{ varMainImage | img_url: 'master' }}" alt="{{ value }}">
+                  </div>
+                {% endif %}
+              {% endfor %}
+              <ul class="swatches_items">
+                {%- for value in option.values -%}
+                  {% assign vari_img = '' %}
+                  {% assign vari_price = '' %}
+                  {% assign variantswatchImage = '' %}
+                  {% assign varMainImage = '' %}
+                  {%- for variant in selectedProduct.variants -%}
+                    {% if variant.title == value %}
+                      {% assign vari_img = variant.image %}
+                      {% assign vari_price = variant.price %}
+                      {% assign variantswatchImage = variant.metafields.custom.variant_banner %}
+                      {% assign varMainImage = variant.metafields.custom.variant_popup_image %}
+                    {% endif %}
+                  {%- endfor -%}
+                  <li class="variant_label_swatches">
+                    <a
+                      href="javascript:void(0)"
+                      value="{{ value | downcase }}"
+                      data-price="{{ vari_price | money_with_currency }}"
+                      class="click-variant"
+                      style="background: {{ value }};"
+                      data-variant-image="{% if variantswatchImage != blank %}{{ variantswatchImage | img_url: 'master' }}{% else %}{{ vari_img | img_url: 'master' }}{% endif %}"
+                      data-popup-image="{% if varMainImage != blank %}{{ varMainImage | img_url: 'master' }}{% else %}{{ vari_img | img_url: 'master' }}{% endif %}"
+                    >
+                      <svg
+                        class="main_svg_true"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M6 12L10.2426 16.2426L18.727 7.75732" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span class="visually-hidden"> {{ value | downcase }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+              {% if section.settings.Btntext != blank %}
+                <a
+                  class="booked_btn"
+                  href="{% if section.settings.BtnUrl != blank %}{{ section.settings.BtnUrl }}{% else %}javascript:void(0);{% endif %}"
+                >
+                  {{ section.settings.Btntext }}
+                </a>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="banner-image">
+        <div class="overlay"></div>
+        {%- for option in selectedProduct.options_with_values -%}
+          <div class="product-variant-item-inner {% if option.name == 'Color' %} swatch-event{% endif %}">
+            <ul class="banner_swatch_items">
+              {%- for value in option.values -%}
+                <li
+                  class="variant_images_swatches"
+                  value="{{ value | downcase }}"
+                  style="{% if forloop.first %}display:block;{% else %}display:none;{% endif %};"
+                >
+                  <div class="main_var_bg">
+                    {% if variantswatchImage != blank %}
+                      <img
+                        src="{% if forloop.first %}{{ variantswatchImage | img_url: 'master' }}{% else %}{% endif %}"
+                        alt=""
+                        class="variant-image"
+                      >
+                    {% else %}
+                      {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {% endif %}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+{% style %}
+   .prod_var_{{ section.id }}{
+     padding-top: {{section.settings.PaddingTop}}px;
+     padding-bottom: {{section.settings.PaddingBottom}}px;
+   }
+    a.booked_btn {
+    background: {{section.settings.BtnBgColor}};
+    color: {{section.settings.BtnFontColor}};
+  }
+  @media (min-width: 768px){
+    .main_products_popup_title {
+      font-size: {{ section.settings.TitleFontSize }}px;
+    }
+    span.main_popup_innertitle {
+      font-size: {{ section.settings.InnerTitleSize }}px;
+    }
+  }
+{% endstyle %}
+
+<script>
+  $(document).ready(function() {
+    function handleVariantClick(sectionId) {
+      $(`.prod_var_${sectionId} .click-variant`).on('click', function() {
+        $(`.prod_var_${sectionId} .click-variant`).removeClass('is--active');
+        $(this).addClass('is--active');
+        const clickedValue = $(this).attr('value');
+        const variantImage = $(this).attr('data-variant-image');
+        const popupImage = $(this).attr('data-popup-image');
+
+        $(`.prod_var_${sectionId} .variant_images_swatches`).each(function() {
+          if ($(this).attr('value') === clickedValue) {
+            $(this).show();
+            $(this).find('img').attr('src', variantImage);
+          } else {
+            $(this).hide();
+          }
+        });
+
+        $(`.prod_var_${sectionId} .variant_popup_image_details`).each(function() {
+          if ($(this).find('img').attr('src') === popupImage) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      });
+    }
+
+    function setDefaultSelection(sectionId) {
+      const defaultVariant = $(`.prod_var_${sectionId} .click-variant`).first();
+      defaultVariant.addClass('is--active');
+      const defaultValue = defaultVariant.attr('value');
+      const defaultImage = defaultVariant.attr('data-variant-image');
+      const defaultPopupImage = defaultVariant.attr('data-popup-image');
+
+      $(`.prod_var_${sectionId} .variant_images_swatches`).each(function() {
+        if ($(this).attr('value') === defaultValue) {
+          $(this).show();
+          $(this).find('img').attr('src', defaultImage);
+        } else {
+          $(this).hide();
+        }
+      });
+
+      $(`.prod_var_${sectionId} .variant_popup_image_details`).each(function() {
+        if ($(this).find('img').attr('src') === defaultPopupImage) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    }
+    $('.product_variant_details').each(function() {
+      const sectionId = $(this).attr('class').split('prod_var_')[1];
+      handleVariantClick(sectionId);
+      setDefaultSelection(sectionId);
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Product variant banner",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "Varchecked",
+      "label": "Show default product",
+      "info": "If checked then default product is displayed else metafield product is displayed",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "PaddingTop",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "PaddingBottom",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 30
+    },
+    {
+      "type": "textarea",
+      "id": "Title",
+      "label": "Enter Title"
+    },
+    {
+      "type": "range",
+      "id": "TitleFontSize",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Title Font size",
+      "default": 32
+    },
+    {
+      "type": "inline_richtext",
+      "id": "InnerTitle",
+      "label": "Enter inner Title"
+    },
+    {
+      "type": "range",
+      "id": "InnerTitleSize",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "sub title Font size",
+      "default": 17
+    },
+    {
+      "type": "text",
+      "id": "Btntext",
+      "label": "Enter Button Name"
+    },
+    {
+      "type": "url",
+      "id": "BtnUrl",
+      "label": "Enter Button URL"
+    },
+    {
+      "type": "color",
+      "id": "BtnBgColor",
+      "label": "Enter Button Bg color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "BtnFontColor",
+      "label": "Enter Button color",
+      "default": "#fff"
+    }
+  ],
+   "presets": [
+  {
+    "name": "Product variant banner"
+  }
+]
+}
+{% endschema %}

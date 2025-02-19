@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content",
+        "share"
+      ],
+      "settings": {}
+    },
+    "dac7de66-58e0-4829-b0d0-7679b683451c": {
+      "type": "upseller-products",
+      "blocks": {
+        "e327004c-fb18-4f21-9785-688e55157212": {
+          "type": "slide",
+          "settings": {
+            "aricle-inner": "If your T-shirts don’t have a unique story, make the story about your customers.  Help the customer imagine how your products fit into their life.  Rather than calling your shirt “nice”, use power words that suit your tone like dazzling, spectacular, or kick ass.  Maybe it will make your customer look jaw-dropping, fearless, or stunning.  Build up your customer’s confidence and make them feel good about themselves and they will likely feel good about your T-shirts.Talk about benefits, not just features.  A feature is a fact.  A benefit is how your product improves your customer’s life.  Use benefits in your product descriptions to insert your T-shirts into your customer’s story.",
+            "product": "packaging-makeup"
+          }
+        },
+        "5c31e140-868e-4b6b-a018-19f2cc38f6dd": {
+          "type": "slide",
+          "settings": {
+            "aricle-inner": "",
+            "product": "cosmetic-1"
+          }
+        }
+      },
+      "block_order": [
+        "e327004c-fb18-4f21-9785-688e55157212",
+        "5c31e140-868e-4b6b-a018-19f2cc38f6dd"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "dac7de66-58e0-4829-b0d0-7679b683451c"
+  ]
+}

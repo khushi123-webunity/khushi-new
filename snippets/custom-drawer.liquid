@@ -1,0 +1,33 @@
+<div class="collection-cart" >
+  <form method="post" action="/cart/add">
+    <input type="hidden" name="id" value="{{ product_id }}" />
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+    <input type="button" name="button" id="quick_view" value="quick view" />
+  </form>
+</div>
+
+<script>
+  $(document).ready(function(){
+  $(document).on('submit','.collection-cart form',function(e){
+   e.preventDefault();
+    var formobj = $(this).serialize(); 
+    var cartmsg = $(this);
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: formobj,
+      dataType: 'json',
+      success: function (data){
+          $('cart-drawer').removeClass('is-empty');
+          $('.drawer__inner-empty').hide();
+          $('cart-drawer').load(location.href + " .cart-drawer");
+          $('#cart-icon-bubble').load(location.href + " #cart-icon-bubble");
+          $('.qtydiv').load();
+      },
+        error: function() {
+           console.log("error");
+        }
+    });
+  });
+});
+</script>

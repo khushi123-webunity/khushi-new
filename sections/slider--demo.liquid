@@ -1,0 +1,70 @@
+<section class="slider--demo">
+  <div class="page-width">
+    <div class="slider--content">
+      {% for block in section.blocks %}
+        <div class="slider--detail">
+          {% if block.settings.slide_img != blank %}
+            <img src="{{ block.settings.slide_img | img_url:'master' }}">
+          {% endif %}
+          <h4>{{ block.settings.title }}</h4>
+          <p>{{ block.settings.desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  $( document ).ready(function() {
+      $('.slider--content').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
+  });
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Slider--demo",
+    "settings": [],
+    "blocks": [
+       {
+         "name": "title",
+         "type": "slide",
+         "settings": [
+           {
+             "type": "image_picker",
+             "id": "slide_img",
+             "label": "Enter Image"
+           },
+           {
+             "type" : "text",
+             "id" : "title",
+             "label" : "Enter Title"
+           },
+           {
+             "type" : "text",
+             "id" : "desc",
+             "label" : "Enter Description"
+           }
+         ]
+       }
+    ],
+    "presets": [
+      {
+        "name": "Slider--demo"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,65 @@
+<div class="custom_collection">
+  <div class="page-with">
+    <div class="collection-content">
+      {% assign collection = section.settings.collection %}
+      {%- for product in collection.products -%}
+        <div class="collection-grid">
+          <div class="collection-img">
+             <a href="{{ product.url }}">
+               <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+             </a> 
+          </div>
+          <div class="collection-title">
+            <a class ="product-title" href="{{ product.url }}">
+               {{ product.title }}
+             </a> <br>
+           
+            <!-- <a class="product-description" href="{{ product.url }}">
+              {{ product.description }}
+           </a> -->
+            <a class="product-price" href="{{ product.url }}">
+              {{ product.price | money }}
+           </a>
+        
+          </div>
+
+          
+          <div class="collection-add">
+            <form action="/cart/add" method="post">
+                <input type="hidden" name="id" class="in " value="{{ product.variants.first.id }}" />
+                <input min="1" type="hidden" value="1" class="quantity" /><br>
+                <input type="submit" name="add" value="Read More" class="add-to-cart-now" >
+            </form>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "custom_collection",
+    "settings": [
+            {
+              "type": "collection",
+              "id": "collection",
+              "label": "Collection"
+            }
+],
+"presets": [
+      {
+        "name": "custom_collection",
+        "category": "text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+

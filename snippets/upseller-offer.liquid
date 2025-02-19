@@ -1,0 +1,19 @@
+<div class="custom-upseller-product">
+ {% for upseller in product.metafields.custom.product_upseller.value %}
+     <div class="upseller--image">   
+        {% for variant in upseller.variants %}
+            <input type="hidden" id="getupseller" value="{{ variant.id }}">
+         {% endfor %}
+            <input type="radio" id="radiono" name="no">
+            <img src="{{ upseller | img_url : "master" }} ">
+            <div class="upseller-information">
+                <h3 class="upseller-title">
+                 {{ upseller.title }}
+               </h3>
+               <span class="upseller--price">
+                {{ upseller.price | money }}
+               </span>
+          </div>
+      </div>
+ {% endfor %}
+</div>

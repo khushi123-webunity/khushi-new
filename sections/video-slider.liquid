@@ -1,0 +1,93 @@
+<section class="video-slider">
+  <div class="video-slider--main">
+    <div class="video-slider--inner">
+      {% for block in section.blocks %}
+        {{
+          block.settings.video
+          | video_tag:
+            image_size: '1000x',
+            autoplay: true,
+            loop: block.settings.enable_video_looping,
+            controls: false,
+            muted: true
+        }}
+      {% endfor %}
+    </div>
+    <div class="video-slider--text">
+      <div class="video-slider-text-inner">
+        <h2 class="video-slider-text-heading">{{ section.settings['video-heading'] }}</h2>
+        {{ section.settings['video-slider--desc'] }}
+        <a target="_blank" class="video-slider-button" href="{{ section.settings.btn--url }}">
+          {{- section.settings['video-slider-btn'] -}}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $( document ).ready(function() {
+      $('.video-slider--inner').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: true
+      });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "video-slider",
+  "settings": [
+  {
+    "type": "text",
+    "id": "video-heading",
+    "label": "Heading"
+  },
+    {
+      "type": "richtext",
+      "id": "video-slider--desc",
+      "label": "Enter Description"
+    },
+    {
+      "type": "url",
+      "id": "btn--url",
+      "label": "Enter Button link"
+    },
+    {
+    "type": "text",
+    "id": "video-slider-btn",
+    "label": "Enter Button name"
+  }
+
+  ],
+   "blocks": [
+   {
+     "name": "Video Slider",
+     "type": "slide",
+     "settings": [
+      {
+      "type": "video",
+      "id": "video",
+      "label": "A Shopify-hosted video"
+      }
+     ]
+   }
+],
+  "presets": [
+    {
+      "name": "video-slider"
+
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

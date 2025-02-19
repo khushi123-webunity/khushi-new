@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "about-banner",
+      "settings": {
+        "main_img": "shopify://shop_images/store5_e977176d-bfbf-4abd-bf5b-b21c8f39cb64.webp",
+        "text": "United Status Items",
+        "font_size": 30,
+        "body_text": "#334fb4",
+        "background": "#7247",
+        "btn_text": "Shop Now",
+        "btn_url": "https://webunityinfotech.com/",
+        "button_text": "#000000"
+      }
+    },
+    "9ba4124d-cf61-42d1-a288-62a4d72a8d9c": {
+      "type": "slider--demo",
+      "blocks": {
+        "adad1790-ae0f-4869-b59d-10115af75525": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/image_2023_05_30T11_55_45_150Z_ebc4979c-69a1-42dc-b516-eadf62aee506.png",
+            "title": "Standard Services",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque vel vestibulum."
+          }
+        },
+        "8a867434-3a42-4ee0-90d4-b729518cf49a": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/image_2023_05_30T11_55_45_150Z_ebc4979c-69a1-42dc-b516-eadf62aee506.png",
+            "title": "Gift Cards",
+            "desc": "this is concept of gift cards. in special events."
+          }
+        },
+        "58a68f6e-7843-4c21-b4e5-b9016a32fa32": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/image_2023_05_30T11_55_45_150Z_ebc4979c-69a1-42dc-b516-eadf62aee506.png",
+            "title": "Standard Services",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque vel vestibulum."
+          }
+        },
+        "cfb79619-6e56-4bcf-a8aa-e38c9258e87a": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/gift-cards.png",
+            "title": "Standard Services",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque vel vestibulum."
+          }
+        },
+        "733387ae-39ba-4dfa-a922-ed122fb3bbe1": {
+          "type": "slide",
+          "settings": {
+            "slide_img": "shopify://shop_images/image_2023_05_30T11_55_45_150Z_ebc4979c-69a1-42dc-b516-eadf62aee506.png",
+            "title": "Standard Services",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque vel vestibulum."
+          }
+        }
+      },
+      "block_order": [
+        "adad1790-ae0f-4869-b59d-10115af75525",
+        "8a867434-3a42-4ee0-90d4-b729518cf49a",
+        "58a68f6e-7843-4c21-b4e5-b9016a32fa32",
+        "cfb79619-6e56-4bcf-a8aa-e38c9258e87a",
+        "733387ae-39ba-4dfa-a922-ed122fb3bbe1"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "9ba4124d-cf61-42d1-a288-62a4d72a8d9c"
+  ]
+}

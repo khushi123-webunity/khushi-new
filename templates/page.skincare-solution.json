@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "skincare-solution",
+      "disabled": true,
+      "settings": {}
+    },
+    "d69ae4c1-a83a-4977-bce6-fd17bd5ae26e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--20132291969336__d69ae4c1-a83a-4977-bce6-fd17bd5ae26e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Services",
+            "heading_size": "h1"
+          }
+        },
+        "template--20132291969336__d69ae4c1-a83a-4977-bce6-fd17bd5ae26e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "We'll help you look and feel your best affordably. At Rela, we can help you with whatever you need fo your wellness and health.",
+            "text_style": "body"
+          }
+        },
+        "template--20132291969336__d69ae4c1-a83a-4977-bce6-fd17bd5ae26e-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20132291969336__d69ae4c1-a83a-4977-bce6-fd17bd5ae26e-heading-1",
+        "template--20132291969336__d69ae4c1-a83a-4977-bce6-fd17bd5ae26e-text-1",
+        "template--20132291969336__d69ae4c1-a83a-4977-bce6-fd17bd5ae26e-buttons-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_1_37e67a4f-98dc-4c52-a499-687a9e3c495d.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d69ae4c1-a83a-4977-bce6-fd17bd5ae26e"
+  ]
+}
